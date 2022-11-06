@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+/* Style for the entire page container */
+.aboutPageContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Styling for the left side */
+.imageSectionContainer {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.AdeleImg {
+  border-radius: 50%;
+}
+
+.underImageText {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.linksContainer {
+  margin-top: 2.5rem;
+  color: #33801F;
+}
+
+/* Styling for the right side */
+.mainTextContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 60rem;
+  margin-left: 2rem;
+}
+
+.mainTextSectionTitle {
+  font-family: Fredoka One;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.secondHeadingText {
+  font-family: Inter;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.paragraphText {
+  font-family: Inter;
+  font-size: 1rem;
+}
+
+.bulletedList {
+  margin-top: 0;
+}
+
+
+
+/* Screen sizes */
+@media screen and (max-width: 68rem) {
+  .imageSectionContainer {
+    width: 15rem;
+  }
+
+  /* .AdeleImg {
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 45rem) {
+  .aboutPageContainer {
+    flex-direction: column;
+  }
+
+  .imageSectionContainer {
+    width: 100%;
+    margin-bottom: -2rem;
+    padding-bottom: 0;
+  }
+
+  .AdeleImg {
+    width: 80%;
+  }
+ 
+  .linksContainer {
+    margin-top: 1.5rem;
+  }
+
+  .decreaseMobileHeight {
+    margin-top: -0.5rem;
+  }
+}
