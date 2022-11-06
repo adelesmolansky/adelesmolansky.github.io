@@ -10,7 +10,7 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Research</h1>
+	  <h1>Research</h1>
 	</div>
 );
 };

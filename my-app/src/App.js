@@ -9,13 +9,14 @@ import Research from './pages/Research';
 function App() {
 return (
 	<Router>
-	<Navbar />
-	<Routes>
-		<Route path='/' exact component={About} />
-		<Route path='/about' component={About} />
-		<Route path='/ai-learners' component={AI_Learners} />
-		<Route path='/research' component={Research} />
-	</Routes>
+    <Navbar />
+    
+    <Routes>
+      <Route path='/' exact component={About} />
+      <Route path='/about' component={About} />
+      <Route path='/ai-learners' component={AI_Learners} />
+      <Route path='/research' component={Research} />
+    </Routes>
 	</Router>
 );
 }

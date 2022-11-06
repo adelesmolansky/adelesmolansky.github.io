@@ -10,7 +10,7 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Adele Smolansky</h1>
+	<h1>AI-Learners</h1>
 	</div>
 );
 };
