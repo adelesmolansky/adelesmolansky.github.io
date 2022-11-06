@@ -16,12 +16,40 @@ const About = () => {
 					<h2 className="decreaseMobileHeight"> Adele Smolansky</h2>
 					<p className="decreaseMobileHeight">B.S Computer Science</p>
 					<p className="decreaseMobileHeight">Cornell University</p>
-					<p className="decreaseMobileHeight">as2953@cornell.edu</p>
-
+					<p className="decreaseMobileHeight">
+						<a
+							target="_blank"
+							href="mailto:as2953@cornell.edu"
+							rel="noreferrer"
+							className="email"
+						>
+							as2953@cornell.edu
+						</a>
+					</p>
+				
 					{/* Links */}
 					<div className="linksContainer">
-						<p className="decreaseMobileHeight">LinkedIn</p>
-						<p className="decreaseMobileHeight">Resume</p>
+						<p className="decreaseMobileHeight">
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/adelesmolansky/"
+								rel="noreferrer"
+								className="profileLink"
+							>
+								LinkedIn
+							</a>
+						</p>
+						<p className="decreaseMobileHeight">
+							<a
+								target="_blank"
+								href="https://drive.google.com/file/d/1bPSt2wZQelBsU3cUYUX5D6CjtKrGmzS_/view?usp=sharing"
+								rel="noreferrer"
+								className="profileLink"
+							>
+								Resume
+							</a>
+						</p>
+
 					</div>
 					
 				</div>
@@ -30,7 +58,12 @@ const About = () => {
 
 			<div className="mainTextContainer">
 				<h1 className="mainTextSectionTitle">About</h1>
-				<p className="paragraphText">Adele Smolansky is a senior studying computer science at Cornell University</p>
+				<p className="paragraphText">
+					Adele is a senior studying Computer Science at Cornell. 
+					She founded AI-Learners in June 2020 to help her sister and many other kids with disabilities learn math. 
+					This year, she is doing research at two labs at Cornell University to explore scientific methods of adaptive learning.
+					Adele is pursing a PhD in accessibility and education to continue her reseach in accessible educational technology. 
+					Ultimately, her goal is to help all students have equal access to educational resources and to maximize learning for each student with technology.</p>
 
 				<h2 className="mainTextSectionTitle">Interests</h2>
 				<ul className="paragraphText">

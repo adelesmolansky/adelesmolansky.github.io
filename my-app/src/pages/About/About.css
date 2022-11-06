@@ -29,6 +29,22 @@
   color: #33801F;
 }
 
+.email {
+  color: black;
+  text-decoration: none;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+.profileLink {
+  color: #33801F;
+  text-decoration: none;
+}
+.profileLink:hover {
+  text-decoration: underline;
+}
+
 /* Styling for the right side */
 .mainTextContainer {
   display: flex;
@@ -66,29 +82,48 @@
   .imageSectionContainer {
     width: 15rem;
   }
-
-  /* .AdeleImg {
-    width: 100%;
-  } */
 }
 
 @media screen and (max-width: 45rem) {
+  .imageSectionContainer {
+    width: 10rem;
+  }
+
+  .underImageText {
+    margin-left: 0;
+  }
+
+  .mainTextContainer {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 35rem) {
   .aboutPageContainer {
     flex-direction: column;
   }
 
   .imageSectionContainer {
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-bottom: -2rem;
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 1rem;
   }
 
   .AdeleImg {
     width: 80%;
   }
+
+  .underImageText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
  
   .linksContainer {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   .decreaseMobileHeight {

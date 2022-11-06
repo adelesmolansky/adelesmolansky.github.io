@@ -28,3 +28,11 @@
   font-weight: 900;
 }
 
+
+/* Screen sizes */
+/* On mobile, hide my name from the top left corner and just have the navbar */
+@media screen and (max-width: 60rem) {
+  .navbarItemsContainer {
+    width: 100%;
+  }
+}

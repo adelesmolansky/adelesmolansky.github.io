@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 // const styles = require('./Navbar.module.css');
 import './Navbar.css'
@@ -14,6 +15,9 @@ const PAGES = [
 
 const Navbar = () => {
   const location = useLocation();
+
+  // This width needs to match what is in the css file
+  const isMobile = useMediaQuery({ query: '(max-width: 60rem)' });
 
   const getLinkStyle = (isSelected: boolean) => {
     if (isSelected) 
@@ -34,13 +38,15 @@ const Navbar = () => {
     <div className='navbarContainer'>
 
       {/* Always write my name in the left corner */}
-      <Link
-        className={"navbarAdeleName navbarItem"}
+      {!isMobile && (
+        <Link
+          className={"navbarAdeleName navbarItem"}
           to='/about'
         >
           Adele Smolansky
         </Link>
-  
+      )}
+      
         <div className='navbarItemsContainer'>
           {PAGES.map((item, idx) => (
             <Link
