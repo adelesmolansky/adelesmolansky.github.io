@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
@@ -10,16 +10,16 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       
       <Routes>
-        <Route exact path='/' component={About} />
-        <Route path='/about' component={About} />
-        <Route path='/ai-learners' component={AI_Learners} />
-        <Route path='/research' component={Research} />
+        <Route exact path='/' element={<About />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/ai-learners' element={<AI_Learners />} />
+        <Route path='/research' element={<Research />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
