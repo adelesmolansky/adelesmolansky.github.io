@@ -1,6 +1,7 @@
 import React from 'react';
 
-import './About.css'
+import './About.css';
+import '../pages.css';
 
 const About = () => {
 	return (
@@ -49,11 +50,8 @@ const About = () => {
 								Resume
 							</a>
 						</p>
-
 					</div>
-					
 				</div>
-				
 			</div>
 
 			<div className="mainTextContainer">

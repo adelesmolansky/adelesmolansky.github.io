@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 /* Style for the entire page container */
 .aboutPageContainer {
@@ -53,28 +52,6 @@
   max-width: 60rem;
   margin-left: 2rem;
 }
-
-.mainTextSectionTitle {
-  font-family: Fredoka One;
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.secondHeadingText {
-  font-family: Inter;
-  font-size: 1.5rem;
-  margin-bottom: 0;
-}
-
-.paragraphText {
-  font-family: Inter;
-  font-size: 1rem;
-}
-
-.bulletedList {
-  margin-top: 0;
-}
-
 
 
 /* Screen sizes */

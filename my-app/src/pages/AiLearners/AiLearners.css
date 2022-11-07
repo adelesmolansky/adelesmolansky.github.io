@@ -1,0 +1,41 @@
+.ailearnersPageContainer {
+  padding: 2rem;
+  max-width: 70rem; 
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.LaraImg {
+  width: 20rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
+.teamImg {
+  width: 80%;
+  padding: 3rem auto;
+}
+
+/* Screen sizes */
+@media screen and (max-width: 68rem) {
+  .LaraImg {
+    width: 15rem;
+    height: 19rem;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .LaraImg {
+    margin: 0rem auto 0rem 1rem;
+  }
+}
+

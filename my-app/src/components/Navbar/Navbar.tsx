@@ -9,8 +9,7 @@ const PAGES = [
   { title: 'About', path: '/about' },
   { title: 'AI-Learners', path: '/ai-learners' },
   { title: 'Research', path: '/research' },
-  // { title: 'News', path: '/news' },
-  // { title: 'Personal', path: '/personal' },
+  { title: 'News', path: '/news' },
 ];
 
 const Navbar = () => {

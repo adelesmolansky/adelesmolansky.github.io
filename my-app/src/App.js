@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
-import AI_Learners from './pages/AI-Learners';
-import Research from './pages/Research';
+import AiLearners from './pages/AiLearners/AiLearners';
+import Research from './pages/Research/Research';
+import News from './pages/News/News';
 
 import './App.css';
 
@@ -16,8 +17,9 @@ function App() {
       <Routes>
         <Route exact path='/' element={<About />} />
         <Route path='/about' element={<About />} />
-        <Route path='/ai-learners' element={<AI_Learners />} />
+        <Route path='/ai-learners' element={<AiLearners />} />
         <Route path='/research' element={<Research />} />
+        <Route path='/news' element={<News />} />
       </Routes>
     </BrowserRouter>
   );
