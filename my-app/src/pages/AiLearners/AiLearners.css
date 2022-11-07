@@ -3,11 +3,6 @@
   max-width: 70rem;
 }
 
-.aboutContainer {
-  display: flex;
-  flex-direction: row;
-}
-
 .logo {
   width: 20rem;
   margin-bottom: 1rem;
@@ -17,6 +12,7 @@
   width: 20rem;
   margin-left: 3rem;
   margin-right: 3rem;
+  float: right;
 }
 
 .teamImg {
@@ -33,7 +29,12 @@
 }
 
 @media screen and (max-width: 35rem) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
   .LaraImg {
-    margin: 0rem auto 0rem 1rem;
+    margin: 1rem 3rem 1rem 2rem;
   }
 }

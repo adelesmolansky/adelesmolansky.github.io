@@ -1,18 +1,27 @@
 import React from "react";
 
+import "./News.css";
 import "../pages.css";
 
 const News = () => {
   return (
     <div className="pageContainer paragraphText">
       <h1 className="mainTextSectionTitle">Talks</h1>
+      <img
+          src="./ctg.jpeg"
+          className="AdeleCTGImg"
+          alt="Adele at the Closing the Gap Conference"
+      />
+
       <p>
         Adele is passionate about sharing AI-Learners with other accessibility
         specialists. She is exhibiting and presenting at the leadering assistive
         technology conferences in the world this year.
       </p>
       <ul className="bulletedList">
-        <li>Closing the Gap (October 2022)</li>
+        <li>Closing the Gap (October 2022): {" "}
+          <a href="https://www.closingthegap.com/conf-22-presenter/adele-smolansky/">Accessible Edtech for Elementary Math with AI-Learners</a>
+        </li>
         <li>
           ATIA: Assistive Technology Industry Association (upcoming - February
           2023)
@@ -61,6 +70,12 @@ const News = () => {
         channels and publications:{" "}
       </p>
       <ul className="bulletedList">
+        <li>
+        How AI-Learners Can Help Kids with Rett Syndrome Learn Math (Oct 2022) {" "}
+          <a href="https://www.rettsyndrome.eu/family-focus/how-ai-learners-can-help-kids-with-rett-syndrome-learn-math/?fbclid=IwAR18iMnMbcjLvOalp3ax9Is2licVUKZuTn1uYzL7qVWOCuQ3e-Uq6i6CU9g">
+            [Rett Syndrome Europe]
+          </a>
+        </li>
         <li>
           AILearners - Building a Future For Children with Disabilities (May
           2022){" "}

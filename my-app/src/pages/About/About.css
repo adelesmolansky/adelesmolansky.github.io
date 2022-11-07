@@ -52,6 +52,10 @@
   margin-left: 2rem;
 }
 
+.worldImg {
+  margin-top: 1rem;
+}
+
 /* Screen sizes */
 @media screen and (max-width: 68rem) {
   .imageSectionContainer {
@@ -103,5 +107,10 @@
 
   .decreaseMobileHeight {
     margin-top: -0.5rem;
+  }
+
+  .worldImg {
+    width: 300px;
+    height: 200px;
   }
 }

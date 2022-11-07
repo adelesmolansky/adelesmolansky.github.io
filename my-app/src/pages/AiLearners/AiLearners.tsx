@@ -5,24 +5,11 @@ import "../pages.css";
 import { useMediaQuery } from "react-responsive";
 
 const AiLearners = () => {
-  const isTablet = useMediaQuery({ query: "(max-width: 68rem)" });
   const isMobile = useMediaQuery({ query: "(max-width: 35rem)" });
 
-  const moneyText = () => {
-    return (
-      <span>
-        To date, AI-Learners has raised $40,000 in non-dilutive funding through
-        university grant competitions. We are currently seeking additional
-        funding to help us expand our impact. Please contact Adele if you are
-        interested in joining us on our journey to helping students with
-        disabilities learn math.
-      </span>
-    );
-  };
-
   const LaraImg = () => {
-    return <img src="./lara.png" className="LaraImg" alt="Young girl" />;
-  };
+    return  <img src="./lara.png" className="LaraImg" alt="Young girl" />
+  }
 
   return (
     <div className="pageContainer">
@@ -38,6 +25,8 @@ const AiLearners = () => {
       <h1 className="mainTextSectionTitle">About</h1>
 
       <div className="aboutContainer">
+        {/* Put the image at the start if we are not on mobile */}
+        {!isMobile && LaraImg()}
         <p className="paragraphText aboutText">
           <b>
             {" "}
@@ -45,6 +34,8 @@ const AiLearners = () => {
             with cognitive, physical, and behavioral disabilities through
             personalized computer games and analytics.
           </b>
+          {/* Put the image in the middle of the text if we are on mobile */}
+          {isMobile && LaraImg()}
           <br></br>
           <br></br>
           Adele Smolansky was inspired by her younger sister Lara, who has a
@@ -59,15 +50,16 @@ const AiLearners = () => {
           personal accounts for their children to practice math at home.
           <br></br>
           <br></br>
-          {!isTablet && moneyText()}
+          To date, AI-Learners has raised $40,000 in non-dilutive funding through
+        university grant competitions. We are currently seeking additional
+        funding to help us expand our impact. Please contact Adele if you are
+        interested in joining us on our journey to helping students with
+        disabilities learn math.
         </p>
 
-        {!isMobile && LaraImg()}
       </div>
 
-      {/* Handle screen sizes */}
-      {isMobile && LaraImg()}
-      <p>{isTablet && moneyText()}</p>
+     
 
       <h1 className="mainTextSectionTitle">Team</h1>
 

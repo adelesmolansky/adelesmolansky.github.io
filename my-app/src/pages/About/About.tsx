@@ -112,6 +112,19 @@ const About = () => {
           <li>NBA 3000: Designing New Ventures</li>
           <li>eLab Student Business Accelerator</li>
         </ul>
+
+        <h1 className="mainTextSectionTitle">Personal</h1>
+        <p className="paragraphText">
+          Outside of school, research, working, and teaching, I love to exercise, 
+          travel, and read books. I was a competitive rythmic gymnast growing up. 
+          Now, I love yoga and weight training! I also love to travel. You can 
+          see the places I have been to in the graphics below:
+        </p>
+        <h3 className="secondHeadingText">The World: visited 25 countries (11.1%)</h3>
+        <img className="worldImg" alt="world map" src="http://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=450x300&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:9999999999999999999999999&chld=US|TQ|MX|JM|CL|CQ|CA|DO|AW|AR|IL|GB|CH|ES|RU|PT|NO|NL|FR|GR|IS|IT|DK|HR|BA" width="450" height="300" ></img>
+
+        <h3 className="secondHeadingText">The United States: visited 21 states (42%)</h3>
+        <img className="worldImg" alt="united states map" src="http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:999999999999999999999&chld=WIVTTXSCPARINCNYNJNHMNMIMAMDMEKYCAUTILFLCT" width="440" height="220" ></img>
       </div>
     </div>
   );
