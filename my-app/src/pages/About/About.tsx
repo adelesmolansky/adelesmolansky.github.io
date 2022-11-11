@@ -57,14 +57,25 @@ const About = () => {
       <div className="mainTextContainer">
         <h1 className="mainTextSectionTitle">About</h1>
         <p className="paragraphText">
-          Adele is a senior studying Computer Science at Cornell. She founded
-          AI-Learners in June 2020 to help her sister and many other kids with
-          disabilities learn math. This year, she is doing research at two labs
-          at Cornell University to explore scientific methods of adaptive
-          learning. Adele is pursing a PhD in accessibility and education to
-          continue her reseach in accessible educational technology. Ultimately,
-          her goal is to help all students have equal access to educational
-          resources and to maximize learning for each student with technology.
+          I am a senior studying Computer Science at Cornell. Inspired by my
+          younger sister Lara, I founded AI-Learners in June 2020 to help Lara
+          and many other kids with disabilities learn math. After working in the
+          accessibility industry at my own startup and at Google, I wanted to
+          better understand the research field. I am now conducting research at
+          two labs at Cornell University to explore scientific methods of
+          educational technology for students with disabilities. After I
+          graduate from Cornell in May 2023, I will be pursing a PhD in
+          accessibility and education. Ultimately, my goal is to help all
+          students have equal access to educational resources and to maximize
+          learning for each student with technology.
+          <br></br> I want to contribute to research in the fields of
+          educational technology and accessibility and to improve the edtech
+          industry to ensure that special needs students have educational
+          resources that effectively facilitate their learning. I would like to
+          become a professor to continue developing the edtech research field
+          and educating future engineers about accessibility. I will also
+          collaborate with industry to ensure my research sees tangible
+          outcomes.
         </p>
 
         <h2 className="mainTextSectionTitle">Interests</h2>
@@ -78,15 +89,16 @@ const About = () => {
         <h2 className="mainTextSectionTitle">Experiences</h2>
         <h3 className="secondHeadingText">AI-Learners</h3>
         <p className="paragraphText">
-          Adele founded AI-Learners in June 2020 and has worked with dozens of
-          students and faculty from Cornell University to develop the company.
           AI-Learners is an educational technology company that helps students
-          of all abilities learn math.
+          of all abilities learn math. I founded AI-Learners in June 2020 and
+          have worked with dozens of students and faculty from Cornell
+          University to develop the company. I have also intercted with hundreds
+          of special needs students, educators, and AT specialists.
         </p>
 
         <h3 className="secondHeadingText">Google</h3>
         <p className="paragraphText">
-          Adele worked at Google for two summers as a Software Engineer.
+          I worked at Google for two summers as a Software Engineer.
         </p>
         <ul className="paragraphText bulletedList">
           <li>Summer 2021: STEP Intern on the Google Drive Team</li>
@@ -95,8 +107,8 @@ const About = () => {
 
         <h3 className="secondHeadingText">Research</h3>
         <p className="paragraphText">
-          Adele is leading multiple research projects across two research labs
-          at Cornell University.
+          This year, I am is leading multiple research projects across two
+          research labs at Cornell University.
         </p>
         <ul className="paragraphText bulletedList">
           <li>Future of Learning Lab, Professor Rene Kizilcec</li>
@@ -105,8 +117,8 @@ const About = () => {
 
         <h3 className="secondHeadingText">Teaching Assistant</h3>
         <p className="paragraphText">
-          Since her undergraduate junior year, Adele has been a Teaching
-          Assistant for two courses at Cornell University
+          Since my undergraduate junior year, I have been a Teaching Assistant
+          for two courses at Cornell University
         </p>
         <ul className="paragraphText bulletedList">
           <li>NBA 3000: Designing New Ventures</li>
@@ -115,16 +127,32 @@ const About = () => {
 
         <h1 className="mainTextSectionTitle">Personal</h1>
         <p className="paragraphText">
-          Outside of school, research, working, and teaching, I love to exercise, 
-          travel, and read books. I was a competitive rythmic gymnast growing up. 
-          Now, I love yoga and weight training! I also love to travel. You can 
-          see the places I have been to in the graphics below:
+          Outside of school, research, working, and teaching, I love to
+          exercise, travel, and read books. I was a competitive rythmic gymnast
+          growing up. Now, I love yoga and weight training! I also love to
+          travel. You can see the places I have been to in the graphics below:
         </p>
-        <h3 className="secondHeadingText">The World: visited 25 countries (11.1%)</h3>
-        <img className="worldImg" alt="world map" src="http://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=450x300&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:9999999999999999999999999&chld=US|TQ|MX|JM|CL|CQ|CA|DO|AW|AR|IL|GB|CH|ES|RU|PT|NO|NL|FR|GR|IS|IT|DK|HR|BA" width="450" height="300" ></img>
+        <h3 className="secondHeadingText">
+          The World: visited 25 countries (11.1%)
+        </h3>
+        <img
+          className="worldImg"
+          alt="world map"
+          src="http://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=450x300&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:9999999999999999999999999&chld=US|TQ|MX|JM|CL|CQ|CA|DO|AW|AR|IL|GB|CH|ES|RU|PT|NO|NL|FR|GR|IS|IT|DK|HR|BA"
+          width="450"
+          height="300"
+        ></img>
 
-        <h3 className="secondHeadingText">The United States: visited 21 states (42%)</h3>
-        <img className="worldImg" alt="united states map" src="http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:999999999999999999999&chld=WIVTTXSCPARINCNYNJNHMNMIMAMDMEKYCAUTILFLCT" width="440" height="220" ></img>
+        <h3 className="secondHeadingText">
+          The United States: visited 21 states (42%)
+        </h3>
+        <img
+          className="worldImg"
+          alt="united states map"
+          src="http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:999999999999999999999&chld=WIVTTXSCPARINCNYNJNHMNMIMAMDMEKYCAUTILFLCT"
+          width="440"
+          height="220"
+        ></img>
       </div>
     </div>
   );

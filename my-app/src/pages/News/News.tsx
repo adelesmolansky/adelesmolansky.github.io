@@ -8,19 +8,24 @@ const News = () => {
     <div className="pageContainer paragraphText">
       <h1 className="mainTextSectionTitle">Talks</h1>
       <img
-          src="./ctg.jpeg"
-          className="AdeleCTGImg"
-          alt="Adele at the Closing the Gap Conference"
+        src="./ctg.jpeg"
+        className="AdeleCTGImg"
+        alt="Adele at the Closing the Gap Conference"
       />
 
       <p>
-        Adele is passionate about sharing AI-Learners with other accessibility
-        specialists. She is exhibiting and presenting at the leadering assistive
-        technology conferences in the world this year.
+        I am really passionate about sharing AI-Learners with other
+        accessibility specialists. This year, I began attending conferences in
+        person and sharing AI-Learners with accessibility professionals and
+        researchers. I am exhibiting and presenting at the leading assistive
+        technology conferences around the world:
       </p>
       <ul className="bulletedList">
-        <li>Closing the Gap (October 2022): {" "}
-          <a href="https://www.closingthegap.com/conf-22-presenter/adele-smolansky/">Accessible Edtech for Elementary Math with AI-Learners</a>
+        <li>
+          Closing the Gap (October 2022):{" "}
+          <a href="https://www.closingthegap.com/conf-22-presenter/adele-smolansky/">
+            Accessible Edtech for Elementary Math with AI-Learners
+          </a>
         </li>
         <li>
           ATIA: Assistive Technology Industry Association (upcoming - February
@@ -30,11 +35,11 @@ const News = () => {
       </ul>
 
       <p>
-        Adele has also presented at mutliple other events, including Cornell
-        alumni events, local Entrepreneurship events, and accessibility graduate
-        classes. Adele loves to share her knowledge in accessibility and
-        education with people around the world to ensure more people are
-        actively contributing to an inclusive society.
+        I have also presented at mutliple other events, including Cornell alumni
+        events, local Entrepreneurship events, and accessibility graduate
+        classes. I love to share my knowledge in accessibility and education
+        with people around the world to ensure more people are actively
+        contributing to an inclusive society.
       </p>
 
       <h1 className="mainTextSectionTitle">Awards & Grants</h1>
@@ -66,12 +71,12 @@ const News = () => {
 
       <h1 className="mainTextSectionTitle">In the News</h1>
       <p>
-        Adele's entrepreneurial pursuits have caught the eyes of many news
-        channels and publications:{" "}
+        My entrepreneurial pursuits have caught the eyes of many news channels
+        and publications:{" "}
       </p>
       <ul className="bulletedList">
         <li>
-        How AI-Learners Can Help Kids with Rett Syndrome Learn Math (Oct 2022) {" "}
+          How AI-Learners Can Help Kids with Rett Syndrome Learn Math (Oct 2022){" "}
           <a href="https://www.rettsyndrome.eu/family-focus/how-ai-learners-can-help-kids-with-rett-syndrome-learn-math/?fbclid=IwAR18iMnMbcjLvOalp3ax9Is2licVUKZuTn1uYzL7qVWOCuQ3e-Uq6i6CU9g">
             [Rett Syndrome Europe]
           </a>
