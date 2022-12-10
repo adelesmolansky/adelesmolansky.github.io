@@ -29,7 +29,6 @@ const AiLearners = () => {
         {!isMobile && LaraImg()}
         <p className="paragraphText aboutText">
           <b>
-            {" "}
             AI-Learners makes learning math accessible and engaging for students
             with cognitive, physical, and behavioral disabilities through
             personalized computer games and analytics.
@@ -63,17 +62,18 @@ const AiLearners = () => {
       <h1 className="mainTextSectionTitle">Team</h1>
 
       <p className="paragraphText">
-        As team work is one our our company values and my (hidden) middle name,
-        I love collaborating with other people. Collaboration has been the key
-        to success at AI-Learners. Since starting AI-Learners in summer 2020, I
-        have worked with almost 100 different Cornell students. In 2021, I
-        created an Engineering Project team at Cornell to enable more students
-        to join the team. As every student contributed to the success of
-        AI-Learners and develops their coding, design, and business skills, I
-        get the opportunity to teach all team members about accessibility,
-        cognitive functions, pedagogical theories, and more. Each team member is
-        now more prepared to graduate college and bring inclusive practices to
-        their next job.
+        The AI-Learners team is unique by our company’s values of teamwork,
+        collaboration, and a drive to serve students with disabilities.
+        Collaboration has been the key to success at AI-Learners. Since starting
+        AI-Learners in the summer of 2020, I have worked with almost 100
+        different Cornell students. In 2021, I created an Engineering Project
+        team at Cornell to enable more students to join the team. As every
+        student contributes to the success of AI-Learners and develops their
+        coding, design, and business skills, I’m glad to get the opportunity to
+        teach team members about accessibility, cognitive principles of
+        learning, pedagogical theories, and more. Each team member is now more
+        prepared to graduate college and bring inclusive practices to their next
+        job.
       </p>
       <p>
         The AI-Learners team is divided into 3 subteams: software development,

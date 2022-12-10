@@ -15,10 +15,13 @@ const News = () => {
 
       <p>
         I am really passionate about sharing AI-Learners with other
-        accessibility specialists. This year, I began attending conferences in
-        person and sharing AI-Learners with accessibility professionals and
-        researchers. I am exhibiting and presenting at the leading assistive
-        technology conferences around the world:
+        accessibility specialists. I love to share my knowledge in accessibility
+        and education with people around the world to ensure more people are
+        actively contributing to an inclusive society.
+      </p>
+      <p>
+        I am exhibiting and presenting at the leading assistive technology
+        conferences around the world:
       </p>
       <ul className="bulletedList">
         <li>
@@ -35,12 +38,25 @@ const News = () => {
       </ul>
 
       <p>
-        I have also presented at mutliple other events, including Cornell alumni
+        I have also presented at multiple other events, including Cornell alumni
         events, local Entrepreneurship events, and accessibility graduate
-        classes. I love to share my knowledge in accessibility and education
-        with people around the world to ensure more people are actively
-        contributing to an inclusive society.
+        classes.
       </p>
+      <ul className="bulletedList">
+        <li>Cornell Law School Showcase and Panel (March 2023)</li>
+        <li>Cornell Law School Showcase and Panel (March 2023)</li>
+        <li>
+          Minnesota Assistive Technology Advisory Team, Guest Presenter (Nov
+          2022)
+        </li>
+        <li>
+          Wyoming Institute for Disabilities AT Professionals, Guest Presenter
+          (Oct 2022)
+        </li>
+        <li>Cornell Computer Science Student Showcase (Oct 2022)</li>
+        <li>Rev Ithaca Startup Works Presenter (Sep 2022)</li>
+        <li>Cornell Computer Science Advisor Board Presenter (April 2022)</li>
+      </ul>
 
       <h1 className="mainTextSectionTitle">Awards & Grants</h1>
       <p>Entrepreneurship:</p>
@@ -67,6 +83,16 @@ const News = () => {
         <li>Cornell Dream Grant (June 2022)</li>
         <li>International Hillel Campus Leader (June 2021)</li>
         <li>Cornell Beck Award (May 2021)</li>
+      </ul>
+
+      <p>Honor Societies:</p>
+      <ul className="bulletedList">
+        <li>Tau Beta Pi Engineering Honor Society</li>
+        <li>
+          Institute of Electrical and Electronic Engineering Eta Kappa Nu Honor
+          Society
+        </li>
+        <li>Alpha Kappa Psi Business Fraternity</li>
       </ul>
 
       <h1 className="mainTextSectionTitle">In the News</h1>
