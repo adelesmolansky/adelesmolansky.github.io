@@ -43,7 +43,7 @@ const About = () => {
             <p className="decreaseMobileHeight">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1bPSt2wZQelBsU3cUYUX5D6CjtKrGmzS_/view?usp=sharing"
+                href="https://drive.google.com/file/d/180CV7xWYrpgMwKra90e6jbzQRMJE_IaG/view"
                 rel="noreferrer"
                 className="profileLink"
               >
