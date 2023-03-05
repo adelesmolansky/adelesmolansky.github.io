@@ -43,7 +43,7 @@ const About = () => {
             <p className="decreaseMobileHeight">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/180CV7xWYrpgMwKra90e6jbzQRMJE_IaG/view"
+                href="https://drive.google.com/file/d/1DYI7iCmaQzN_VM9TynBvt0gdj52IAAbZ/view?usp=sharing"
                 rel="noreferrer"
                 className="profileLink"
               >
@@ -62,15 +62,13 @@ const About = () => {
             undergraduate senior studying Computer Science at Cornell University
           </b>
           . Inspired by my younger sister, who has a severe neurological
-          disability called Rett Syndrome,{" "}
-          <b>
-            I founded AI-Learners, an educational technology company that helps
-            kids with disabilities learn math.
-          </b>{" "}
-          To better understand how EdTech can help kids learn math, I'm
-          conducting research a the <b> Cornell Future of Learning Lab </b>. I'm
-          also researching game accessibility at the{" "}
-          <b> Enhancing Ability Lab at Cornell </b>.
+          disability called Rett Syndrome, <b>I founded AI-Learners</b> , an
+          educational technology company that helps kids with disabilities learn
+          math. To better understand how EdTech can support students with
+          disabilities, I'm{" "}
+          <b>conducting research at two labs at Cornell University</b>: the
+          Cornell Future of Learning Lab and the Enhancing Ability Lab at
+          Cornell.
         </p>
         <p className="paragraphText">
           Starting Fall of 2023, <b> I will pursue a PhD </b>at the intersection
@@ -101,8 +99,9 @@ const About = () => {
         <p className="paragraphText">Some of my research questions include:</p>
         <ul className="paragraphText bulletedList">
           <li>
-            How does a child's brain develop, and how is this impacted by a
-            cognitive disability such as dyscalculia, dyslexia, and ADHD?
+            How does a child's brain develop, and how is this development
+            impacted by a cognitive disability such as dyscalculia, dyslexia,
+            and ADHD?
           </li>
           <li>
             How can we apply our understanding of how children learn to create
@@ -163,7 +162,7 @@ const About = () => {
         </p>
         <p className="paragraphText">
           <b>Summer 2021: STEP Intern on the Google Drive Team</b>
-          <br></br>During my first summer at Google, I interred with the Google
+          <br></br>During my first summer at Google, I interned with the Google
           Drive team, working on the Google Drive Counter Abuse project. While
           developing interactive and secure web pages for the Drive Abuse team
           using HTML, CSS, and TypeScript, I became a stronger front-end
@@ -171,7 +170,7 @@ const About = () => {
           APIs to access data from the backend and set proto values to support
           frontend logic. Since technology should be accessible to all users, I
           improved the accessibility of the web pages and conducted
-          accessibility testing using Google’s accessibility testing framework.
+          accessibility testing using Google's accessibility testing framework.
         </p>
         <p className="paragraphText">
           <b>Summer 2022: SWE Intern on the Android Accessibility Team</b>

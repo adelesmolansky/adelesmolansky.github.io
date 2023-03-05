@@ -25,16 +25,26 @@ const News = () => {
       </p>
       <ul className="bulletedList">
         <li>
-          Closing the Gap (October 2022):{" "}
-          <a href="https://www.closingthegap.com/conf-22-presenter/adele-smolansky/">
+          CSUN Assistive Technology{" "}
+          <a href="https://www.csun.edu/cod/conference/sessions/index.php/public/presentations/view/1296/">
             Accessible Edtech for Elementary Math with AI-Learners
-          </a>
+          </a>{" "}
+          (March 2023)
         </li>
         <li>
-          ATIA: Assistive Technology Industry Association (upcoming - February
-          2023)
+          ATIA: Assistive Technology Industry Association{" "}
+          <a href="https://s3.goeshow.com/atia/orlando/2023/profile.cfm?profile_name=session&master_key=692FCD69-F04D-A206-2B64-3520592DD5F9&page_key=AE3A540A-F04D-A206-2B64-DD9B6CAF54C9&xtemplate&bShowHandout=0&userLGNKEY=0/">
+            Accessible Edtech for Elementary School Math
+          </a>{" "}
+          (February 2023)
         </li>
-        <li>CSUN Assistive Technology (upcoming - March 2023)</li>
+        <li>
+          Closing the Gap:{" "}
+          <a href="https://www.closingthegap.com/conf-22-presenter/adele-smolansky/">
+            Accessible Edtech for Elementary Math with AI-Learners
+          </a>{" "}
+          (October 2022)
+        </li>
       </ul>
 
       <p>
@@ -43,7 +53,10 @@ const News = () => {
         classes.
       </p>
       <ul className="bulletedList">
-        <li>Cornell Law School Showcase and Panel (March 2023)</li>
+        <li>
+          Cornell Entrepreneurship Celebration: Startup Panel (April 2023)
+        </li>
+        <li>Cornell Silicon Valley Student Startup Showcase (March 2023)</li>
         <li>Cornell Law School Showcase and Panel (March 2023)</li>
         <li>
           Minnesota Assistive Technology Advisory Team, Guest Presenter (Nov
@@ -61,6 +74,12 @@ const News = () => {
       <h1 className="mainTextSectionTitle">Awards & Grants</h1>
       <p>Entrepreneurship:</p>
       <ul className="bulletedList">
+        <li>Tulane Business Plan Competition: semi-finalist (March 2023)</li>
+        <li>Draper Competition: semi-finalist (March 2023)</li>
+        <li>
+          SubSummit Entrepreneurship Pitch Competition: semi-finalist (January
+          2023)
+        </li>
         <li>Cornell Contribution Project (June 2022)</li>
         <li>Cornell Pitch for the People Competition (May 2022)</li>
         <li>e-Fest Entrepreneurship Challenge (April 2022)</li>
@@ -78,10 +97,17 @@ const News = () => {
       <p>Personal:</p>
       <ul className="bulletedList">
         <li>Cornell Deans List (ongoing)</li>
-        <li>Cane Scholar (ongoing)</li>
+        <li>
+          Global Student Entrepreneur Association (GSEA) Internationals:
+          semi-finalist (January 2023)
+        </li>
+        <li>GSEA US Nationals: top 5 (January 2023)</li>
+        <li>DEVIES Award for Gaming & Entertainment (January 2023)</li>
+        <li>Life Changing Labs: 22 Under 22 (August 2022)</li>
         <li>Cornell Engineering Undergraduate Research Grant (June 2022)</li>
         <li>Cornell Dream Grant (June 2022)</li>
         <li>International Hillel Campus Leader (June 2021)</li>
+        <li>Cane Entrepreneurial Scholar Award (May 2021)</li>
         <li>Cornell Beck Award (May 2021)</li>
       </ul>
 
@@ -102,6 +128,12 @@ const News = () => {
       </p>
       <ul className="bulletedList">
         <li>
+          Law Students Support Entrepreneurship and a Good Cause (November 2022){" "}
+          <a href="https://www.lawschool.cornell.edu/news/law-students-support-entrepreneurship-and-a-good-cause/">
+            [Law School]
+          </a>
+        </li>
+        <li>
           How AI-Learners Can Help Kids with Rett Syndrome Learn Math (Oct 2022){" "}
           <a href="https://www.rettsyndrome.eu/family-focus/how-ai-learners-can-help-kids-with-rett-syndrome-learn-math/?fbclid=IwAR18iMnMbcjLvOalp3ax9Is2licVUKZuTn1uYzL7qVWOCuQ3e-Uq6i6CU9g">
             [Rett Syndrome Europe]
@@ -119,6 +151,21 @@ const News = () => {
           2022 New York Business Plan Competition Winners Announced (April 2022){" "}
           <a href="https://nybpc.org/news/2022/4/28/2022-new-york-business-plan-competition-winners-announced">
             [Upstate Capital]
+          </a>
+        </li>
+
+        <li>
+          Cornell University Students Represent New York in National Competition
+          (April 2022){" "}
+          <a href="https://981thehawk.com/cornell-university-entrepreneurship/">
+            [981 The Hawk]
+          </a>
+        </li>
+
+        <li>
+          The Journey From Graduate to CEO Podcast (April 2022){" "}
+          <a href="https://podcasts.apple.com/us/podcast/the-journey-from-gradate-to-ceo/id1533696542?i=1000563530659">
+            [Winning Strategies Playbook]
           </a>
         </li>
 
