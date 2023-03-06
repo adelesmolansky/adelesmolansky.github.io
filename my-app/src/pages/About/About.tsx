@@ -57,22 +57,18 @@ const About = () => {
       <div className="mainTextContainer">
         <h1 className="mainTextSectionTitle">About</h1>
         <p className="paragraphText">
-          My name is Adele Smolansky, and I'm an{" "}
-          <b>
-            undergraduate senior studying Computer Science at Cornell University
-          </b>
-          . Inspired by my younger sister, who has a severe neurological
-          disability called Rett Syndrome, <b>I founded AI-Learners</b> , an
-          educational technology company that helps kids with disabilities learn
-          math. To better understand how EdTech can support students with
-          disabilities, I'm{" "}
-          <b>conducting research at two labs at Cornell University</b>: the
-          Cornell Future of Learning Lab and the Enhancing Ability Lab at
-          Cornell.
+          My name is Adele Smolansky, and I'm an undergraduate senior studying
+          Computer Science at Cornell University . Inspired by my younger
+          sister, who has a severe neurological disability called Rett Syndrome,
+          I founded AI-Learners, an educational technology company that helps
+          kids with disabilities learn math. To better understand how EdTech can
+          support students with disabilities, I'm conducting research at two
+          labs at Cornell University: the Cornell Future of Learning Lab and the
+          Enhancing Ability Lab at Cornell.
         </p>
         <p className="paragraphText">
-          Starting Fall of 2023, <b> I will pursue a PhD </b>at the intersection
-          of education, computer science, and neuroscience to increase our
+          Starting Fall of 2023, I will pursue a PhD at the intersection of
+          education, computer science, and neuroscience to increase our
           scientific understanding of how children learn and how educational
           technology can improve student learning outcomes. Ultimately, my goal
           is to help all students have equal access to educational resources and
@@ -156,6 +152,15 @@ const About = () => {
           </li>
         </ul>
 
+        <p className="paragraphText">
+          I am also the Student Member of the Society for Learning Analytics
+          Research (SoLAR) Executive Committee! My goal is for more researchers
+          to be aware of the complex needs of students with disabilities so
+          special needs students are more represented in learning analytics. As
+          a member of the SoLAR Executive Committee, I will advocate for people
+          with disabilities in learning analytics research.
+        </p>
+
         <h3 className="secondHeadingText">Google</h3>
         <p className="paragraphText">
           I worked at Google for two summers as a Software Engineering Intern.
@@ -213,12 +218,12 @@ const About = () => {
         ></img>
 
         <h3 className="secondHeadingText">
-          The United States: visited 21 states (42%)
+          The United States: visited 24 states (48%)
         </h3>
         <img
           className="worldImg"
           alt="united states map"
-          src="http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:999999999999999999999&chld=WIVTTXSCPARINCNYNJNHMNMIMAMDMEKYCAUTILFLCT"
+          src="http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:999999999999999999999999&chld=WIVTTXSCPARINCNYNJNHMNMIMAMDMEKYCAUTILFLCTVAWAGA"
           width="440"
           height="220"
         ></img>
