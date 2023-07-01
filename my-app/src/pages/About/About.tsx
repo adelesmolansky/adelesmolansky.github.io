@@ -2,6 +2,7 @@ import React from "react";
 
 import "./About.css";
 import "../pages.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -15,8 +16,14 @@ const About = () => {
         />
         <div className="underImageText">
           <h2 className="decreaseMobileHeight"> Adele Smolansky</h2>
-          <p className="decreaseMobileHeight">B.S Computer Science</p>
-          <p className="decreaseMobileHeight">Cornell University</p>
+          <p className="decreaseMobileHeight">
+            Cornell University 2023: B.S. Computer Science
+          </p>
+          <p className="decreaseMobileHeight">
+            Stanford University PhD Candidate: Learning Sciences and Technology
+            Design
+          </p>
+          <p className="decreaseMobileHeight">AI-Learners Founder and CEO</p>
           <p className="decreaseMobileHeight">
             <a
               target="_blank"
@@ -55,117 +62,60 @@ const About = () => {
       </div>
 
       <div className="mainTextContainer">
-        <h1 className="mainTextSectionTitle">About</h1>
-        <p className="paragraphText">
-          My name is Adele Smolansky, and I'm an undergraduate senior studying
-          Computer Science at Cornell University . Inspired by my younger
-          sister, who has a severe neurological disability called Rett Syndrome,
-          I founded AI-Learners, an educational technology company that helps
-          kids with disabilities learn math. To better understand how EdTech can
-          support students with disabilities, I'm conducting research at two
-          labs at Cornell University: the Cornell Future of Learning Lab and the
-          Enhancing Ability Lab at Cornell.
+        <h1>About</h1>
+        <p>
+          My name is Adele Smolansky, and I'm an entrepreneur and researcher! I
+          graduated Summa Cum Laude from Cornell University with a Bachelors of
+          Science in Computer Science as a Merrill Presidential Scholar. I'm now
+          pursuing a PhD at Stanford University in Learning Sciences and
+          Technology Design (LSTD), supported by the Stanford Graduate
+          Fellowship (SGF) and the National Science Fellowship (NSF). I am also
+          the student representative of the Society for Learning Analytics
+          Research <a href="https://www.solaresearch.org/">(SoLAR)</a> Executive
+          Committee.
         </p>
-        <p className="paragraphText">
-          Starting Fall of 2023, I will pursue a PhD at the intersection of
-          education, computer science, and neuroscience to increase our
-          scientific understanding of how children learn and how educational
-          technology can improve student learning outcomes. Ultimately, my goal
-          is to help all students have equal access to educational resources and
-          maximize learning for each student with technology.
+        <p>
+          Inspired by my younger sister, who has a severe neurological
+          disability called Rett Syndrome, I founded{" "}
+          <a href="https://ai-learners.com/">AI-Learners</a>, an educational
+          technology platform that helps kids with all abilities learn math.
+          Students all across the country are using AI-Learners with their
+          parents and teachers to learn mathematics. AI-Learners is the first
+          EdTech platform to provide accessible math games for students with
+          diverse physical, cognitive, and behavioral abilities. We recently won
+          the Learning Engineering Tools Competition 2022 by Schmidt Futures!
+          Check out the website at{" "}
+          <a href="https://ai-learners.com/">www.ai-Learners.com</a> and read
+          more on the <Link to="/ai-learners">AI-Learners page</Link>!
         </p>
-        <p className="paragraphText">
-          With an understanding of the complexities of creating inclusive
-          technology, I'm committed to educating other professionals about
-          accessibility. I've greatly enjoyed teaching dozens of students and
-          professionals about accessibility at Cornell and conferences around
-          the country. In graduate school, I hope to raise awareness about the
-          challenges that people with disabilities face and educate designers
-          and engineers to consider diverse users in product development so
-          future technology reflects the needs of all individuals.
-        </p>
-
-        <h2 className="mainTextSectionTitle">Research Interests</h2>
-        <p className="paragraphText">
-          I am broadly interested in researching how children learn and how
-          educational technology can improve student learning outcomes. As the
-          learning sciences are a highly interdisciplinary field, I seek to use
-          mixed methods research and collaborate with many researchers.
-        </p>
-        <p className="paragraphText">Some of my research questions include:</p>
-        <ul className="paragraphText bulletedList">
-          <li>
-            How does a child's brain develop, and how is this development
-            impacted by a cognitive disability such as dyscalculia, dyslexia,
-            and ADHD?
-          </li>
-          <li>
-            How can we apply our understanding of how children learn to create
-            more effective educational resources?
-          </li>
-          <li>
-            How can we model student learning with artificial intelligence?
-          </li>
-          <li>
-            How can we co-design EdTech resources with students, parents, and
-            teachers to optimize engagement and learning outcomes?
-          </li>
-          <li>
-            How can we incorporate a student's cognitive abilities within
-            adaptive EdTech learning algorithms to improve personalization?
-          </li>
-          <li>
-            How can we design EdTech to be more accessible for students with
-            physical and cognitive disabilities?
-          </li>
-          <li>
-            How can we facilitate more effective interactions between students
-            and teachers to improve educational outcomes?
-          </li>
-        </ul>
-
-        <h2 className="mainTextSectionTitle">Experiences</h2>
-        <h3 className="secondHeadingText">AI-Learners</h3>
-        <p className="paragraphText">
-          AI-Learners is an educational technology company that helps students
-          of all abilities learn math. I founded AI-Learners in June 2020 and
-          have worked with dozens of students and faculty from Cornell
-          University to develop the company. I have also collaborated with
-          hundreds of special needs students, educators, and AT specialists.
+        <p>
+          To support AI-Learners and other entrepreneurs and researchers, I'm
+          committing to advancing the scientific understanding of how EdTech can
+          help students with disabilities. At Cornell and during this summer,
+          I've been working at the Future of Learning Lab, advised by Rene
+          Kizilcec, and the Enhancing Ability Lab, advised by Shiri Azenkot.
+          I've conducted various studies including systematic reviews, interview
+          studies, survey studies, and theoretical analysis, to better
+          understand the complex needs of students with disabilities and their
+          supporters. Read more about my{" "}
+          <Link to="/research">research projects here</Link>!
         </p>
 
-        <h3 className="secondHeadingText">Research</h3>
-        <p className="paragraphText">
-          This year, I am leading multiple research projects at two research
-          labs at Cornell University.
-        </p>
-        <ul className="paragraphText bulletedList">
-          <li>
-            <b>Future of Learning Lab</b>, Professor Rene Kizilcec: I'm
-            researching how children with cognitive disabilities learn and how
-            EdTech can help elementary school students learn math.
-          </li>
-          <li>
-            <b>Enhancing Ability Lab</b>, Professor Shiri Azenkot: I'm
-            researching game accessibility for people with physical disabilities
-            and the assistive technology ecosystem.
-          </li>
-        </ul>
-
-        <p className="paragraphText">
-          I am also the Student Member of the Society for Learning Analytics
-          Research (SoLAR) Executive Committee! My goal is for more researchers
-          to be aware of the complex needs of students with disabilities so
-          special needs students are more represented in learning analytics. As
-          a member of the SoLAR Executive Committee, I will advocate for people
-          with disabilities in learning analytics research.
+        <p>
+          At Stanford, I will continue exploring the challenges that students
+          and their supporters face, while also exploring new AI solutions. I'm
+          looking forward to joining the Autonomous Agents Lab, advised by Nick
+          Haber, and the Landay Lab, advised by James Landay. I will also work
+          with Jason Yeatman and Maneesh Agrawala.
         </p>
 
-        <h3 className="secondHeadingText">Google</h3>
-        <p className="paragraphText">
-          I worked at Google for two summers as a Software Engineering Intern.
+        <h2>Professional Experience: Google</h2>
+        <p>
+          I had the pleasure of working at Google for two summers as a Software
+          Engineering Intern, where I met incredible people and became a
+          stronger computer scientist.
         </p>
-        <p className="paragraphText">
+        <p>
           <b>Summer 2021: STEP Intern on the Google Drive Team</b>
           <br></br>During my first summer at Google, I interned with the Google
           Drive team, working on the Google Drive Counter Abuse project. While
@@ -177,7 +127,7 @@ const About = () => {
           improved the accessibility of the web pages and conducted
           accessibility testing using Google's accessibility testing framework.
         </p>
-        <p className="paragraphText">
+        <p>
           <b>Summer 2022: SWE Intern on the Android Accessibility Team</b>
           <br></br>During my second internship with Google, I wanted to learn
           more about how Google handled accessibility, so I joined the Android
@@ -188,27 +138,26 @@ const About = () => {
           Talkback bugs and presented my work to the Android Accessibility team.
         </p>
 
-        <h3 className="secondHeadingText">Teaching Assistant</h3>
-        <p className="paragraphText">
-          Since my undergraduate junior year, I have been a Teaching Assistant
-          for two courses at Cornell University.
+        <h2>Teaching Experience</h2>
+        <p>
+          I worked as a Teaching Assistant for two years at Cornell University.
+          I worked with two classes at Cornell University:
         </p>
-        <ul className="paragraphText bulletedList">
+        <ul className="removeMarginTopFromUL">
           <li>NBA 3000: Designing New Ventures</li>
           <li>eLab Student Business Accelerator</li>
         </ul>
 
-        <h1 className="mainTextSectionTitle">Personal</h1>
-        <p className="paragraphText">
+        <h1>Personal</h1>
+        <p>
           Outside of school, research, working, and teaching, I love to
-          exercise, travel, and read books. Growing up, I was a Rhythmic Gymnast
-          and traveled around the country competing in various competitions.
-          Now, I love yoga, weight training, and hiking! I also love to travel.
-          You can see the places I have been to in the graphics below:
+          exercise, travel, and read books. Growing up, I was a rhythmic
+          gymnast, and I traveled around the country competing in various
+          competitions. Now, I love yoga, weight training, and hiking! I also
+          love to travel. You can see the places I have been to in the graphics
+          below:
         </p>
-        <h3 className="secondHeadingText">
-          The World: visited 25 countries (11.1%)
-        </h3>
+        <h3>The World: visited 25 countries (11.1%)</h3>
         <img
           className="worldImg"
           alt="world map"
@@ -217,9 +166,7 @@ const About = () => {
           height="300"
         ></img>
 
-        <h3 className="secondHeadingText">
-          The United States: visited 24 states (48%)
-        </h3>
+        <h3>The United States: visited 24 states (48%)</h3>
         <img
           className="worldImg"
           alt="united states map"

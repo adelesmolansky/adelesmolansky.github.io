@@ -3,23 +3,46 @@
   max-width: 70rem;
 }
 
-.mainTextSectionTitle {
-  font-family: Fredoka One;
-  font-size: 2rem;
+.removeMarginTopFromUL {
+  margin-top: 0;
+}
+
+li {
+  margin-top: 0.5rem;
+}
+
+.openAbstractButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: -0.3rem;
+  font-family: Inter;
+  font-size: 1rem;
+  color: blue;
+}
+
+/* General styles */
+h1 {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 2.5rem;
   margin-bottom: 0;
 }
 
-.secondHeadingText {
+h2 {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+
+h3 {
   font-family: Inter;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.paragraphText {
+p {
   font-family: Inter;
   font-size: 1rem;
-}
-
-.bulletedList {
-  margin-top: 0;
 }

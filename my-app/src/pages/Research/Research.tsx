@@ -1,168 +1,191 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../pages.css";
 
+const PUBLICATIONS = [
+  {
+    title:
+      "Equity, Diversity, and Inclusion in Educational Technology Research and Development.",
+    DOI: "https://doi.org/10.1007/978-3-031-36336-8_8",
+    authors:
+      "Adele Smolansky, Huy A. Nguyen, Rene F. Kizilcec, and Bruce M. McLaren.",
+    publication:
+      "Artificial Intelligence in Education. Posters and Late Breaking Results, Workshops and Tutorials, Industry and Innovation Tracks, Practitioners, Doctoral Consortium and Blue Sky.",
+    notes:
+      "We will be facilitating a workshop at the AIED 2023 conference. Read more about the workship on",
+    link: "https://adelesmolansky.com/aied23-edi-edtech/",
+    linkText: "the workshop's website.",
+    abstract:
+      "Modern education stands to greatly benefit from technological advances, especially in Artificial Intelligence (AI), that aim to enable effective and personalized learning for all students. However, to improve learning for the majority of students, AI solutions may exclude those who are under-represented due to unique differences in their demographic background or cognitive abilities. Towards combating this issue, we propose a workshop that will initiate conversations about equity, diversity, and inclusion in educational technology research and development. The workshop invites papers from the AIED community about equitable and inclusive educational technology that supports diverse populations, with selected authors being invited to present their work. The workshop is structured around three stages of learning engineering - system design, experimental study, and data analysis - with informational presentations, guest speakers, paper presentations, and group discussions relevant to each stage. Through the participation of community members from multiple disciplines, we seek to formulate a framework for developing and assessing equitable and inclusive educational technology.",
+  },
+  {
+    title:
+      "Educator and Student Perspectives on the Impact of Generative AI on Assessments in Higher Education.",
+    authors:
+      "Adele Smolansky, Andrew Cram, Corina Raduescu, Sandris Zeivots, Elaine Huber, and Rene F. Kizilcec.",
+    publication: "ACM Digital Library.",
+    notes:
+      "We will be presenting a WIP poster at the Learning at Scale 2023 conference.",
+    abstract:
+      "The sudden popularity and availability of generative AI tools such as ChatGPT, which can write compelling essays on any topic and ace standardized tests across many domains, raise questions about the sustainability of traditional assessment practices. This moment presents a rare opportunity for innovation in current online assessment practices, but understanding both the educators’ and students’ perspectives on the issue is critical to achieve a sustainable change in assessment practice. We developed a survey instrument to measure and compare the attitudes of both stakeholders, building on an established framework for examining the quality of online assessments along six dimensions. Educators and students are asked to consider several assessment scenarios, indicate their preferences, and predict the other’s preference. The instrument is designed to understand educator and student perceptions to inform global efforts to reform assessment practices.",
+  },
+  {
+    title:
+      "Developing a Prototype to Scale up Digital Support for Online Assessment Design.",
+    authors:
+      "Andrew Cram, Corina Raduescu, Sandris Zeivots, Adele Smolansky, Rene F. Kizilcec, and Elaine Huber.",
+    publication: "ACM Digital Library.",
+    notes:
+      "We will be presenting a WIP poster at the Learning at Scale 2023 conference.",
+    abstract:
+      "Educators rarely have access to just-in-time feedback and guiding heuristics when designing or updating assessments in higher education. This study describes the initial development process for an automated support system for designing high-quality online assessments. We identify key elements to embed in this digital artifact to offer just-in-time support for educators to design and evaluate their online assessments. To this end, we follow the six steps of design science research, focusing on the early stages of problem identification, solution objectives, and initial conceptual design. After reviewing multiple assessment models and frameworks, we discuss a recent framework for evaluating and designing high-quality online assessments, consisting of ten design and contextual elements. This framework underpins the proposed solution which is a digital artifact that encourages consideration of alternate forms of assessment while retaining the flexibility to operate within individual educators’ design practices and contexts. We expect the proposed system to help educators and instructional designers better understand the strengths and weaknesses of their assessments, consider alternate forms of assessment, and incorporate the system into their assessment design process.",
+  },
+  ,
+];
+
+const PAST_PROJECTS = [
+  {
+    title: "Evaluating Digital Math Tools for Students with Disabilities.",
+    pendingSubmission: "CHI 2023",
+    authors:
+      "Adele Smolansky, Juan Delgado, Shiri Azenkot, and Rene F. Kizilcec.",
+    abstract:
+      "Digital math tools have a demonstrated potential to increase students' learning outcomes, but little is known about the real-life use, accessibility, and effectiveness of digital math tools for students with disabilities. To fill this gap in the literature, we surveyed 27 U.S.- based special education teachers and analyzed 22 digital math tools used by participants. We found that participants typically used mainstream tools that are not designed for students with disabilities, and these tools had many accessibility issues and a lack of customization options. Participants wanted to try using a new tool specifically designed for students with disabilities as the tool was easy to use, customizable, engaging, and offered additional math support through hints, examples, and feedback. Based on our findings, we believe that digital math tools can help solve challenges that special education teachers and students face in the classroom. We provide design recommendations and directions for future work to help developers and researchers create accessible and effective learning tools for students with disabilities.",
+  },
+  {
+    title:
+      "Systematic Review of Adaptive Math Learning Tools for Elementary Schools Students. ",
+    pendingSubmission: "Computers and Technology Journal",
+    authors: "Adele Smolansky, Yann Hicke, and Rene F. Kizilcec.",
+    abstract:
+      "Educational technology is increasingly used to support student mathematics learning in classrooms and at home. While some adaptive math learning tools have been shown to improve student engagement and achievement, there are important open questions about the effectiveness of these tools for students with disabilities, students from low socio-economic status, and students from minority ethnic backgrounds. We conducted a systematic review of adaptive math learning tools for elementary school students to provide a comprehensive analysis of the types of artificial intelligence algorithms used, the underlying design principles, and the research studies conducted with these tools. Using the PRISMA Statement, the search process identified 28 distinct tools that have been developed and 89 research articles that have studied them since 2000. We systematically coded the tools and articles to understand (a) the similarities and differences between tools' designs and algorithms, (b) the types, participants, and results of research that has been conducted, and (c) the extent to which tools support minority students. The four most researched tools in the literature are ST Math, Math Garden, Reasoning Mind, and Number Race, which account for 43 of the 68 empirical studies we identified. Ten studies have sample sizes greater than 10,000 students, but only four studies critically examine impacts on students with disabilities. This review suggests research opportunities to advance our understanding of how adaptive math learning tools can be developed for a more diverse and inclusive population of elementary school students.",
+  },
+];
+
+const CURRENT_PROJECTS = [
+  {
+    title:
+      "Perspectives from AT Industry Professionals on the Process and Challenges of Successful AT Implementation for Children",
+    anticipatedSubmission: "CHI 2023",
+    authors:
+      "Adele Smolansky, Catherine Baker, Shiri Azenkot, and Lauren Milne",
+    abstract:
+      "Assistive technology (AT) can help students with disabilities improve their academic performance, develop autonomy and participation, increase acquisition of social skills, and promote motivation and increase students’ attention. However, numerous studies have shown that AT is often abandoned or underutilized in classrooms and at home. Researchers have explored the challenges that teachers, parents, and disability specialists face during the process of helping children select, acquire, and successfully integrate AT into their lives, but there has been little research from the perspectives of the AT industry professionals, who play an important role in not only manufacturing and designing AT, but also providing direct and indirect training to children's support networks. We conducted semi-structured interviews with 21 AT industry professionals to investigate AT industry professionals' role in the AT process for children with disabilities and the factors that impact the successful integration of AT into a child's life. ",
+  },
+  {
+    title: "Designing Digital Math Games for Students with CVI",
+    anticipatedSubmission: "TBD",
+    authors: "Adele Smolansky, Miranda Yang, and Shiri Azenkot",
+    abstract:
+      "Cortical vision impairment (CVI) is a neurological visual impairment that affects the visual processing centers of the brain and has become the most prevalent type of visual impairment among children. Teachers of the visually impaired (TVIs) help students by adapting educational materials, teaching students to use assistive technology, and training other school staff on how to support students’ needs. Due to the visual nature of mathematics, students with CVI face challenges when learning math, and TVIs struggle to make math education accessible. Digital math tools are becoming increasingly popular in classrooms, but existing tools do not meet the complex needs of students with CVI. To investigate how to design tools for students with CVI, we interviewed 30 individuals who support students with CVI, including 20 TVIs and 10 school administrators, AT specialists, or CVI educational product developers.",
+  },
+];
+
 const Research = () => {
+  const numPapers =
+    PUBLICATIONS.length + PAST_PROJECTS.length + CURRENT_PROJECTS.length;
+  const [openAbstractsList, setOpenAbstractsList] = useState(
+    Array(numPapers).fill(false)
+  );
+
   return (
     <div className="pageContainer">
-      <h1 className="mainTextSectionTitle">Cornel Future of Learning Lab</h1>
-      <p className="paragraphText">
-        With guidance from Cornell Professor Rene Kizilcec, I am researching
-        adaptive learning algorithms and optimal game designs to help kids with
-        cognitive disabilities learn early math skills. I am working on several
-        projects:
-      </p>
-      <ul className="paragraphText bulletedList">
-        <li>
-          <b>
-            Current Project: Exploring Digital Math Game Features for Early
-            Learners.
-          </b>{" "}
-          I'm conducting a multi-part study with special needs teachers to
-          investigate how to design and integrate EdTech games into PreK-1st
-          grade classrooms for students with disabilities. I'm now conducting an
-          interview study and a survey with teachers to better understand how
-          teachers are currently supporting students. By analyzing existing
-          literature, I developed a novel model for teaching early mathematics
-          to children with cognitive disabilities. I am comparing my interview
-          findings and analysis of public teaching material with my novel model.
-          Additionally, I am translating my model into game designs, which will
-          be evaluated with observational studies. To conduct this study, I am
-          leading a research group with multiple undergraduate students. In the
-          future, I plan to conduct a controlled experiment to demonstrate the
-          efficacy of the games.
-        </li>
-        <li>
-          <b>
-            Current Project: Investigating the Impact of Technological
-            Innovation on Online Assessments.
-          </b>{" "}
-          In almost every university course, students take assessments that aim
-          to measure a student's understanding of a particular topic. Recent
-          technological innovation, such as ChatGPT, highlights the need to
-          re-think how we conduct assessments to improve student's assessment
-          experience, increase student's benefit from taking the assessment,
-          ensure assessments are fair and safe for all students, and improve the
-          implementation procedure for educators. I am colloborating with
-          researchers from the University of Sydney to better understand how
-          technological innovation changes educator and student perceptions of
-          the future of assessments in higher education. We are conducting a
-          survey, and will submit an in progress report for the 2023 Learning at
-          Scale Conference.
-        </li>
-        <li>
-          <b>
-            Past Project: Systematic Review of Adaptive Math Learning Tools for
-            Elementary Schools Students.{" "}
-            <i>(Pending publication in AIED 2023)</i>
-          </b>
-          I conducted a systematic literature review of adaptive EdTech math
-          programs, analyzing how existing machine learning algorithms and
-          program designs consider students with diverse cognitive abilities.
-          After reading and analyzing hundreds of studies, I found limited
-          empirical data demonstrating the efficacy of EdTech games for children
-          with disabilities and many unanswered questions about how children's
-          brains develop as they learn. I also discovered various research
-          methods to investigate EdTech and how students learn, ranging from
-          case studies to large-scale observational studies.
-        </li>
-        <li>
-          <b>
-            Past Project: Workshop proposal: Equity, Diversity, and Inclusion in
-            the Research and Development of Educational Technology.{" "}
-            <i>(Pending acceptance in AIED 2023)</i>
-          </b>
-          The proposed workshop aims to initiate conversations about equity and
-          inclusion in educational technology research and development to help
-          prosper a more inclusive research community and society. The workshop
-          will include presentations about past research on digital learning
-          tools that considers student demographics (disabilities, gender, race,
-          and socio-economic status) from workshop organizers and guest
-          speakers. We will also solicit papers from the AIED community about
-          equitable and inclusive digital learning tools and invite selected
-          authors to present their work. Lastly, the audience will participate
-          in rich discussions about promoting equity and inclusion in future
-          research.
-        </li>
+      <h1>Research</h1>
+
+      <h2>Publications</h2>
+      <ul>
+        {PUBLICATIONS.map((data, idx) => (
+          <li>
+            <b>{data.title}</b> {!data.DOI && <i>(Publication in progress)</i>}
+            <ul className="bulletedList">
+              {data.DOI && (
+                <li>
+                  DOI: <a href={data.DOI}>{data.DOI}</a>
+                </li>
+              )}
+              <li>Authors: {data.authors}</li>
+              <li>Publication: {data.publication}</li>
+              <li>
+                {data.notes} <a href={data.link}>{data.linkText}</a>
+              </li>
+              <li>
+                <button
+                  className="openAbstractButton"
+                  onClick={() => {
+                    const newList = [...openAbstractsList]; // Create a new array
+                    newList[idx] = !openAbstractsList[idx]; // Update the value at the specific index
+                    setOpenAbstractsList(newList); // Update the state with the new array
+                  }}
+                >
+                  {openAbstractsList[idx] ? "Abstract:" : "View Abstract"}
+                </button>
+                {openAbstractsList[idx] ? data.abstract : ""}
+              </li>
+            </ul>
+          </li>
+        ))}
       </ul>
 
-      <h1 className="mainTextSectionTitle">Enhancing Ability Lab at Cornell</h1>
-      <p className="paragraphText">
-        With guidance from Cornell Professor Shiri Azenkot, I am researching
-        EdTech game accessibility and the assistive technology ecosystem. I am
-        working on several projects:
-      </p>
-      <ul className="paragraphText bulletedList">
-        <li>
-          <b>
-            Current Study: Challenges of Successful AT Implementation:
-            Perspectives from AT Professionals.{" "}
-          </b>
-          Preliminary interviews with 23 Assistive Technology (AT) professionals
-          confirmed that accessibility is often an afterthought in industry,
-          accessibility research is underdeveloped, and there is limited
-          knowledge transfer in the AT industry. I am now conducting the main
-          interview study to better understand how children are supported in
-          their use of technology and what challenges children and their
-          supporters face when acquiring, selecting, and learning to use AT. I
-          am collaborating with Dr. Catie Baker (Creighton University) and Dr.
-          Lauren Milne (Macalester College) on this project, and we plan to
-          submit a paper to ASSETS 2023
-        </li>
+      <h2>Past Projects with Paper Submissions Pending</h2>
+      <ul>
+        {PAST_PROJECTS.map((data, idx) => {
+          const offsetidx = idx + PUBLICATIONS.length;
+          return (
+            <li>
+              <b>{data.title}</b>{" "}
+              <ul>
+                <li>Authors: {data.authors}</li>
+                <li>Pending Submission: {data.pendingSubmission}</li>
+                <li>
+                  <button
+                    className="openAbstractButton"
+                    onClick={() => {
+                      const newList = [...openAbstractsList]; // Create a new array
+                      newList[offsetidx] = !openAbstractsList[offsetidx]; // Update the value at the specific index
+                      setOpenAbstractsList(newList); // Update the state with the new array
+                    }}
+                  >
+                    {openAbstractsList[offsetidx]
+                      ? "Abstract:"
+                      : "View Abstract"}
+                  </button>
+                  {openAbstractsList[offsetidx] ? data.abstract : ""}
+                </li>
+              </ul>
+            </li>
+          );
+        })}
+      </ul>
 
-        <li>
-          <b>
-            Current Study: How Parents Support Children with Vision Impairments
-            in their use of Technology.
-          </b>{" "}
-          Motivated by the gap in research on how children with vision
-          impairments use technology, I'm conducting an interview study with
-          parents of children with vision impairments to understand how parents
-          select and acquire assistive technology for their children and then
-          teach their children how to use technology. I'm collaborating with Dr.
-          Catie Baker (Creighton University) and Dr. Lauren Milne (Macalester
-          College) to conduct this study, and we plan to submit a paper to CHI
-          2023.
-        </li>
-
-        <li>
-          <b>
-            Current Study: Systematic Review of Game Accessibility Research.{" "}
-          </b>{" "}
-          Researchers have studied digital games for decades. “Games” are very
-          broad and range from purely entertainment games, exergames,
-          educational games, rehabilitation games, etc. More recently,
-          researchers have investigated the use of games for people with
-          disabilities, including adapting existing games to be accessible or
-          developing games specifically for people with disabilities. To our
-          knowledge, the current state of game accessibility across all game
-          domains and disabilities is unknown. Thus, to help researchers
-          continue developing the game accessibility field, I am conducting a
-          systematic literature review of game accessibility and analyzing what
-          accessible games have been developed and studied for people with
-          disabilities, what type of research has been conducted on games for
-          people with disabilities, how has game accessibility changed over
-          time, and what gaps in the area require future research.
-        </li>
-
-        <li>
-          <b>
-            CPast Project: Developing an Accessibility Evaluation Method for
-            EdTech Games. <i>(On hold)</i>{" "}
-          </b>{" "}
-          It is unknown whether commercially available EdTech games are
-          accessible to students with physical disabilities, and we do not have
-          an evaluation method to determine the accessibility of these games.
-          After analyzing accessibility guidelines with various qualitative and
-          quantitative techniques, I created a preliminary method to evaluate
-          the accessibility of EdTech games. In the future, I will conduct an
-          interview study with EdTech creators and users to refine my evaluation
-          method, and then use the final method to evaluate commercial EdTech
-          math games to reveal existing accessibility problems and demonstrate
-          the benefits of my evaluation method. I will then provide design
-          recommendations for EdTech creators to help make future academic and
-          industry games more accessible.
-        </li>
+      <h2>Current Projects</h2>
+      <ul>
+        {CURRENT_PROJECTS.map((data, idx) => {
+          const offsetidx = idx + PUBLICATIONS.length + PAST_PROJECTS.length;
+          return (
+            <li>
+              <b>{data.title}</b>{" "}
+              <ul>
+                <li>Authors: {data.authors}</li>
+                <li>Anticipated Submission: {data.anticipatedSubmission}</li>
+                <li>
+                  <button
+                    className="openAbstractButton"
+                    onClick={() => {
+                      const newList = [...openAbstractsList]; // Create a new array
+                      newList[offsetidx] = !openAbstractsList[offsetidx]; // Update the value at the specific index
+                      setOpenAbstractsList(newList); // Update the state with the new array
+                    }}
+                  >
+                    {openAbstractsList[offsetidx]
+                      ? "Abstract:"
+                      : "View Abstract"}
+                  </button>
+                  {openAbstractsList[offsetidx] ? data.abstract : ""}
+                </li>
+              </ul>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

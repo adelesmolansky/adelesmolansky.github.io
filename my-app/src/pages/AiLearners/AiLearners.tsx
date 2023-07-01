@@ -22,73 +22,68 @@ const AiLearners = () => {
         <img src="./logo.jpg" className="logo" alt="AI-Learners logo" />
       </a>
 
-      <h1 className="mainTextSectionTitle">About</h1>
-
       <div className="aboutContainer">
         {/* Put the image at the start if we are not on mobile */}
         {!isMobile && LaraImg()}
-        <p className="paragraphText aboutText">
-          <b>
+        <div className="aboutText">
+          <p>
             AI-Learners makes learning math accessible and engaging for students
-            with cognitive, physical, and behavioral disabilities through
+            with diverse cognitive, physical, and behavioral abilities through
             personalized computer games and analytics.
-          </b>
+          </p>
           {/* Put the image in the middle of the text if we are on mobile */}
           {isMobile && LaraImg()}
-          <br></br>
-          <br></br>
-          Growing up, I watched my younger sister Lara, who has a severe
-          neurological disability called Rett Syndrome, struggle to learn math.
-          Lara inspired me to create AI-Learners and help my sister and many
-          other students with disabilities. In the summer of 2020, I developed
-          the first iteration of AI-Learners with a small team of developers
-          from Cornell University. Since then, the company has grown into a team
-          of 15+ student interns and 10+ professional advisors who are united by
-          our company values of teamwork, continuous learning, and a drive to
-          serve students with disabilities. AI-Learners now has 70+ math games
-          available across grade levels PreK-2nd grade, and over 100 parents
-          have created personal accounts for their children to practice math at
-          home.
-          <br></br>
-          <br></br>
-          To date, AI-Learners has raised $40,000 in non-dilutive funding
-          through university grant competitions. We are currently seeking
-          additional funding to help us expand our impact. Please contact me if
-          you are interested in joining us on our journey to helping students
-          with disabilities learn math.
-        </p>
+          <p>
+            Growing up, I watched my younger sister Lara, who has a severe
+            neurological disability called Rett Syndrome, struggle to learn
+            math. Lara inspired me to create AI-Learners and help my sister and
+            many other students with disabilities. In the summer of 2020, I
+            founded AI-Learners. While I studied at Cornell, I worked with
+            dozens of Cornell studies and faculty. The team now comprises
+            several Cornell graduates and other passionate individuals. We are
+            advised by software engineers from Google and other EdTech startups,
+            special education teachers, and accessibility specialists.
+          </p>
+          <p>
+            AI-Learners now has 70+ math games available across grade levels
+            PreK-2nd grade, and hundreds of students, teachers, and parents all
+            across the country are using AI-Learners. Schools are piloting
+            AI-Learners over the summer - NYC private schools including
+            Manhattan Star Academy, iHope, Viscardi, Brooklyn Autism Center;
+            Perkins School for the Blind; Miami and Chicago Lighthouse for the
+            Blind; and various public schools in CT, NY, and CA. We also provide
+            individual subscriptions to parents to use AI-Learners with their
+            students at home.
+          </p>
+          <p>
+            To meet the needs of students with diverse abilities, AI-Learners is
+            highly personalized. We offer different color and object modes (see
+            images below) as well as a robust in-game settings menu, where
+            teachers can customize different aspects of the game. We leverage
+            artificial intelligence to recommend new games for students to play
+            and we dynamically adjust level difficulty for students. We also
+            provide comprehensive analytics for teachers to help them better
+            understand their student's math abilities.
+          </p>
+          <p>
+            To date, AI-Learners has raised $65,000 in non-dilutive funding
+            through grant competitions and accelerators. We are currently
+            seeking additional funding to help us expand our impact. Please
+            contact me if you are interested in joining us on our journey to
+            helping students with disabilities learn math.
+          </p>
+        </div>
       </div>
 
-      <h1 className="mainTextSectionTitle">Team</h1>
-
-      <p className="paragraphText">
-        The AI-Learners team is unique by our company’s values of teamwork,
-        collaboration, and a drive to serve students with disabilities.
-        Collaboration has been the key to success at AI-Learners. Since starting
-        AI-Learners in the summer of 2020, I have worked with almost 100
-        different Cornell students. In 2021, I created an Engineering Project
-        team at Cornell to enable more students to join the team. As every
-        student contributes to the success of AI-Learners and develops their
-        coding, design, and business skills, I’m glad to get the opportunity to
-        teach team members about accessibility, cognitive principles of
-        learning, pedagogical theories, and more. Each team member is now more
-        prepared to graduate college and bring inclusive practices to their next
-        job.
-      </p>
-      <p>
-        The AI-Learners team is divided into 3 subteams: software development,
-        business, and design. I lead weekly full team meetings and two sub-team
-        work sessions (6 total) per week. All students are passionate about
-        helping kids with disabilities learn math! I am also working with the
-        Cornell Future of Learning Lab and Enhancing Ability lab and applying
-        insights on education and accessible practices to improve the
-        AI-Learners math games.
-      </p>
-      <img
-        src="./team.jpg"
-        className="teamImg"
-        alt="Group of Cornell students"
-      />
+      <div className="gameImgsContainer">
+        <img src="./counting.png" className="gameImg" alt="Counting apples" />
+        <img src="./addition.png" className="gameImg" alt="Adding apples" />
+        <img
+          src="./logic.png"
+          className="gameImg"
+          alt="Choose the fruit on the left"
+        />
+      </div>
     </div>
   );
 };

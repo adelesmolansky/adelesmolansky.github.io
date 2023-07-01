@@ -5,8 +5,16 @@ import "../pages.css";
 
 const News = () => {
   return (
-    <div className="pageContainer paragraphText">
-      <h1 className="mainTextSectionTitle">Talks</h1>
+    <div className="pageContainer">
+      <h1>News</h1>
+      <p>
+        Over the past few years, I have given dozens of talks around the country
+        for AI-Learners, research, and other academic endeavors. I have also won
+        multiple awards for my entrepreneurial and academic accomplishments.
+        Keep reading to find articles, podcasts, and TV spotlights with me!
+      </p>
+
+      <h2>Talks</h2>
       <img
         src="./ctg.jpeg"
         className="AdeleCTGImg"
@@ -17,13 +25,16 @@ const News = () => {
         I am really passionate about sharing AI-Learners with other
         accessibility specialists. I love to share my knowledge in accessibility
         and education with people around the world to ensure more people are
-        actively contributing to an inclusive society.
+        actively contributing to an inclusive society. I've exhibited and
+        presented at leading assistive technology conferences around the world,
+        as well as taught professionals about accessible educational technology:
       </p>
-      <p>
-        I am exhibiting and presenting at the leading assistive technology
-        conferences around the world:
-      </p>
-      <ul className="bulletedList">
+      <ul>
+        <li>Minnesota Assistive Technology Advisory Team (Nov 2022)</li>
+        <li>
+          Wyoming Institute for Disabilities AT Professionals -{" "}
+          <a href="https://youtu.be/pLXqYZSBG1k">Presenter</a> (Oct 2022)
+        </li>
         <li>
           CSUN Assistive Technology{" "}
           <a href="https://www.csun.edu/cod/conference/sessions/index.php/public/presentations/view/1296/">
@@ -48,55 +59,80 @@ const News = () => {
       </ul>
 
       <p>
-        I have also presented at multiple other events, including Cornell alumni
-        events, local Entrepreneurship events, and accessibility graduate
-        classes.
+        I have also presented at various Cornell, entrepreneurship, and research
+        events:
       </p>
-      <ul className="bulletedList">
+      <ul>
         <li>
           Cornell Entrepreneurship Celebration: Startup Panel (April 2023)
         </li>
         <li>Cornell Silicon Valley Student Startup Showcase (March 2023)</li>
         <li>Cornell Law School Showcase and Panel (March 2023)</li>
-        <li>
-          Minnesota Assistive Technology Advisory Team, Guest Presenter (Nov
-          2022)
-        </li>
-        <li>
-          Wyoming Institute for Disabilities AT Professionals, Guest Presenter
-          (Oct 2022)
-        </li>
+
         <li>Cornell Computer Science Student Showcase (Oct 2022)</li>
         <li>Rev Ithaca Startup Works Presenter (Sep 2022)</li>
         <li>Cornell Computer Science Advisor Board Presenter (April 2022)</li>
       </ul>
 
-      <h1 className="mainTextSectionTitle">Awards & Grants</h1>
-      <p>Entrepreneurship:</p>
-      <ul className="bulletedList">
+      <h2>Awards & Grants</h2>
+      <h3>Entrepreneurship:</h3>
+      <p>
+        I've competed in dozens of grant competitions and won over $110,000 for
+        AI-Learners.
+      </p>
+      <ul>
+        <li>
+          Learning Engineering Tools Competition 2022 by Schmidt Futures: winner
+          - $50,000 (July 2023)
+        </li>
+        <li>
+          Cornell Computer and Informational Science BOOM Award - $1,500 (April
+          2023)
+        </li>
+        <li>
+          New York State Business Plan Competition: 1st Place - $10,00 (April
+          2023)
+        </li>
+        <li>
+          2023 Cornell Engineering Innovation Competition: 1st Place - $7,500
+          (April 2023)
+        </li>
         <li>Tulane Business Plan Competition: semi-finalist (March 2023)</li>
         <li>Draper Competition: semi-finalist (March 2023)</li>
         <li>
           SubSummit Entrepreneurship Pitch Competition: semi-finalist (January
           2023)
         </li>
-        <li>Cornell Contribution Project (June 2022)</li>
-        <li>Cornell Pitch for the People Competition (May 2022)</li>
-        <li>e-Fest Entrepreneurship Challenge (April 2022)</li>
+        <li>Cornell Contribution Project - $2,500 (June 2022)</li>
+        <li>
+          Cornell Pitch for the People Competition: 1st place - $2,000 (May
+          2022)
+        </li>
+        <li>
+          e-Fest Entrepreneurship Challenge: 2nd place - $2,500 (April 2022)
+        </li>
         <li>
           Texas Christian University Values & Ventures Competition (April 2022)
         </li>
         <li>
-          New York State Business Plan Competition - Tech Garden Award (April
-          2022)
+          New York State Business Plan Competition Tech Garden Award - $2,500
+          (April 2022)
         </li>
-        <li>Cornell eLab Student Business Accelerator (April 2021)</li>
-        <li>Cornell Engineering Innovation Competition (April 2021)</li>
+        <li>Cornell eLab Student Business Accelerator - $5,000 (April 2021)</li>
+        <li>
+          Cornell Engineering Innovation Competition: 2nd place - $2,000 (April
+          2021)
+        </li>
       </ul>
 
-      <p>Personal:</p>
-      <ul className="bulletedList">
-        <li>Cornell Deans List (ongoing)</li>
+      <h3>Academic:</h3>
+      <p>
+        I've also been awarded multiple academic scholarships and awards for my
+        leadership, research, and entrepreneurship experiences.
+      </p>
+      <ul>
+        <li>Cornell Deans List (Fall 2019 - May 2023)</li>
+        <li>Cornell Merrill Presidential Scholars Award (May 2023)</li>
         <li>
           Global Student Entrepreneur Association (GSEA) Internationals:
           semi-finalist (January 2023)
@@ -111,8 +147,8 @@ const News = () => {
         <li>Cornell Beck Award (May 2021)</li>
       </ul>
 
-      <p>Honor Societies:</p>
-      <ul className="bulletedList">
+      <h2>Honor Societies:</h2>
+      <ul>
         <li>Tau Beta Pi Engineering Honor Society</li>
         <li>
           Institute of Electrical and Electronic Engineering Eta Kappa Nu Honor
@@ -121,12 +157,24 @@ const News = () => {
         <li>Alpha Kappa Psi Business Fraternity</li>
       </ul>
 
-      <h1 className="mainTextSectionTitle">In the News</h1>
+      <h2>In the News</h2>
       <p>
         My entrepreneurial pursuits have caught the eyes of many news channels
         and publications:{" "}
       </p>
-      <ul className="bulletedList">
+      <ul>
+        <li>
+          Celebration Honors Student, Alumni Entrepreneurs (April 2023){" "}
+          <a href="https://cis.cornell.edu/celebration-honors-student-alumni-entrepreneurs">
+            [Cornell Bowers CIS]
+          </a>
+        </li>
+        <li>
+          Tips for Strategically Growing a Team (April 2023){" "}
+          <a href="https://www.revithaca.com/tips-for-strategically-growing-a-team/">
+            [Rev Ithaca Startup]
+          </a>
+        </li>
         <li>
           Law Students Support Entrepreneurship and a Good Cause (November 2022){" "}
           <a href="https://www.lawschool.cornell.edu/news/law-students-support-entrepreneurship-and-a-good-cause/">
