@@ -21,6 +21,7 @@ const PUBLICATIONS = [
   {
     title:
       "Educator and Student Perspectives on the Impact of Generative AI on Assessments in Higher Education.",
+    DOI: "https://dl.acm.org/doi/10.1145/3573051.3596191",
     authors:
       "Adele Smolansky, Andrew Cram, Corina Raduescu, Sandris Zeivots, Elaine Huber, and Rene F. Kizilcec.",
     publication: "ACM Digital Library.",
@@ -32,6 +33,7 @@ const PUBLICATIONS = [
   {
     title:
       "Developing a Prototype to Scale up Digital Support for Online Assessment Design.",
+    DOI: "https://dl.acm.org/doi/10.1145/3573051.3596194",
     authors:
       "Andrew Cram, Corina Raduescu, Sandris Zeivots, Adele Smolansky, Rene F. Kizilcec, and Elaine Huber.",
     publication: "ACM Digital Library.",

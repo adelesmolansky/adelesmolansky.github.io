@@ -164,6 +164,12 @@ const News = () => {
       </p>
       <ul>
         <li>
+          AI ed-tech, smart contraceptive among innovation awardees (May 2023){" "}
+          <a href="https://news.cornell.edu/stories/2023/05/ai-ed-tech-smart-contraceptive-among-innovation-awardees">
+            [Cornell Chronicle]
+          </a>
+        </li>
+        <li>
           Celebration Honors Student, Alumni Entrepreneurs (April 2023){" "}
           <a href="https://cis.cornell.edu/celebration-honors-student-alumni-entrepreneurs">
             [Cornell Bowers CIS]
