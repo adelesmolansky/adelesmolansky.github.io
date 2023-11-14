@@ -42,7 +42,6 @@ const PUBLICATIONS = [
     abstract:
       'Educators rarely have access to just-in-time feedback and guiding heuristics when designing or updating assessments in higher education. This study describes the initial development process for an automated support system for designing high-quality online assessments. We identify key elements to embed in this digital artifact to offer just-in-time support for educators to design and evaluate their online assessments. To this end, we follow the six steps of design science research, focusing on the early stages of problem identification, solution objectives, and initial conceptual design. After reviewing multiple assessment models and frameworks, we discuss a recent framework for evaluating and designing high-quality online assessments, consisting of ten design and contextual elements. This framework underpins the proposed solution which is a digital artifact that encourages consideration of alternate forms of assessment while retaining the flexibility to operate within individual educators’ design practices and contexts. We expect the proposed system to help educators and instructional designers better understand the strengths and weaknesses of their assessments, consider alternate forms of assessment, and incorporate the system into their assessment design process.',
   },
-  ,
 ];
 
 const PAST_PROJECTS = [
