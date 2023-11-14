@@ -4,7 +4,8 @@
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "jsx": "react",
+    // "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -17,6 +18,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "src/*"]
+    }
   }
 }

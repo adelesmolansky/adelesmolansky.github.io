@@ -1,8 +1,6 @@
-import React from "react";
-
-import "./About.css";
-import "../pages.css";
-import { Link } from "react-router-dom";
+import './About.css';
+import '../pages.css';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -27,11 +25,11 @@ const About = () => {
           <p className="decreaseMobileHeight">
             <a
               target="_blank"
-              href="mailto:as2953@cornell.edu"
+              href="mailto:adele@ai-learners.com"
               rel="noreferrer"
               className="email"
             >
-              as2953@cornell.edu
+              adele@ai-learners.com
             </a>
           </p>
 
@@ -76,7 +74,7 @@ const About = () => {
         </p>
         <p>
           Inspired by my younger sister, who has a severe neurological
-          disability called Rett Syndrome, I founded{" "}
+          disability called Rett Syndrome, I founded{' '}
           <a href="https://ai-learners.com/">AI-Learners</a>, an educational
           technology platform that helps kids with all abilities learn math.
           Students all across the country are using AI-Learners with their
@@ -84,7 +82,7 @@ const About = () => {
           EdTech platform to provide accessible math games for students with
           diverse physical, cognitive, and behavioral abilities. We recently won
           the Learning Engineering Tools Competition 2022 by Schmidt Futures!
-          Check out the website at{" "}
+          Check out the website at{' '}
           <a href="https://ai-learners.com/">www.ai-Learners.com</a> and read
           more on the <Link to="/ai-learners">AI-Learners page</Link>!
         </p>
@@ -97,7 +95,7 @@ const About = () => {
           I've conducted various studies including systematic reviews, interview
           studies, survey studies, and theoretical analysis, to better
           understand the complex needs of students with disabilities and their
-          supporters. Read more about my{" "}
+          supporters. Read more about my{' '}
           <Link to="/research">research projects here</Link>!
         </p>
 

@@ -1,0 +1,12 @@
+.schedule-button {
+  background-color: #068d0a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: bold;
+}

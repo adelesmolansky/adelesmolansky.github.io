@@ -1,11 +1,9 @@
-import React from "react";
-
-import "./AiLearners.css";
-import "../pages.css";
-import { useMediaQuery } from "react-responsive";
+import './AiLearners.css';
+import '../pages.css';
+import { useMediaQuery } from 'react-responsive';
 
 const AiLearners = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 35rem)" });
+  const isMobile = useMediaQuery({ query: '(max-width: 35rem)' });
 
   const LaraImg = () => {
     return <img src="./lara.png" className="LaraImg" alt="Young girl" />;

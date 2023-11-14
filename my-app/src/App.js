@@ -1,13 +1,13 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Navbar from "./components/Navbar/Navbar";
-import About from "./pages/About/About";
-import AiLearners from "./pages/AiLearners/AiLearners";
-import Research from "./pages/Research/Research";
-import News from "./pages/News/News";
+import Navbar from './components/Navbar/Navbar';
+import About from './pages/About/About';
+import AiLearners from './pages/AiLearners/AiLearners';
+import Research from './pages/Research/Research';
+import News from './pages/News/News';
+import PD from './pages/PD/PD';
 
-import "./App.css";
+import './App.css';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/ai-learners" element={<AiLearners />} />
         <Route path="/research" element={<Research />} />
         <Route path="/news" element={<News />} />
+        <Route path="/professional-development" element={<PD />} />
       </Routes>
     </BrowserRouter>
   );

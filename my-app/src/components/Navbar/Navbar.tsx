@@ -1,35 +1,34 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+import { Link, useLocation } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
-// const styles = require('./Navbar.module.css');
-import "./Navbar.css";
+import './Navbar.css';
 
 const PAGES = [
-  { title: "About", path: "/about" },
-  { title: "AI-Learners", path: "/ai-learners" },
-  { title: "Research", path: "/research" },
-  { title: "News", path: "/news" },
+  // { title: 'About', path: '/about' },
+  { title: 'AI-Learners', path: '/ai-learners' },
+  { title: 'Research', path: '/research' },
+  { title: 'News', path: '/news' },
+  { title: 'K-12 PD', path: '/professional-development' },
 ];
 
 const Navbar = () => {
   const location = useLocation();
 
   // This width needs to match what is in the css file
-  const isMobile = useMediaQuery({ query: "(max-width: 60rem)" });
+  const isMobile = useMediaQuery({ query: '(max-width: 60rem)' });
 
   const getLinkStyle = (isSelected: boolean) => {
     if (isSelected)
       return {
         fontWeight: 900,
-        fontSize: "1.25rem",
-        marginTop: "0.4rem",
+        fontSize: '1.25rem',
+        marginTop: '0.4rem',
       };
     else
       return {
         fontWeight: 400,
-        fontSize: "1.1rem",
-        marginTop: "0.55rem",
+        fontSize: '1.1rem',
+        marginTop: '0.55rem',
       };
   };
 
@@ -37,7 +36,7 @@ const Navbar = () => {
     <div className="navbarContainer">
       {/* Always write my name in the left corner */}
       {!isMobile && (
-        <Link className={"navbarAdeleName navbarItem"} to="/about">
+        <Link className={'navbarAdeleName navbarItem'} to="/about">
           Adele Smolansky
         </Link>
       )}
