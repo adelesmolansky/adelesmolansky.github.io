@@ -295,19 +295,17 @@ const PD = () => (
         </ul>
       </>
     ))}
-    <p>
-      {' '}
-      Email me{' '}
-      <a
-        target="_blank"
-        href="mailto:adele@ai-learners.com"
-        rel="noreferrer"
-        className="email"
-      >
-        adele@ai-learners.com
-      </a>{' '}
-      to schedule a session!
-    </p>
+    <button
+      className="schedule-button"
+      type="button"
+      onClick={() => {
+        const mailto =
+          'mailto:adele@ai-learners.com?subject=PD for K-12 Inquiry&body=Hi! I am interesed in your professional development services!';
+        window.open(mailto, '_blank');
+      }}
+    >
+      Email me to schedule!
+    </button>
   </div>
 );
 
