@@ -69,10 +69,12 @@ const About = () => {
           Science in Computer Science as a Merrill Presidential Scholar. After
           one year of my PhD at Stanford University in Learning Sciences and
           Technology Design (LSTD), I decided to take a leave of absence and
-          graduate with a masters from Stanford. I am grateful for the Stanford
-          Graduate Fellowship (SGF) and the National Science Fellowship (NSF)
-          for supporting my PhD work.
+          graduate with a masters from Stanford to work full-time on my startup,
+          AI-Learners. I am grateful for the Stanford Graduate Fellowship (SGF)
+          and the National Science Fellowship (NSF) for supporting my PhD work.
         </p>
+
+        <h2>Professional Experience: AI-Learners (current)</h2>
         <p>
           Inspired by my younger sister, who has a severe neurological
           disability called Rett Syndrome, I founded{' '}
@@ -88,18 +90,17 @@ const About = () => {
           on the <Link to="/ai-learners">AI-Learners page</Link>!
         </p>
         <p>
-          To support AI-Learners and other entrepreneurs and researchers, I'm
-          committing to advancing the scientific understanding of how EdTech can
-          help students with disabilities. At Cornell University, I worked with
-          the Future of Learning Lab, advised by Rene Kizilcec, and the
-          Enhancing Ability Lab, advised by Shiri Azenkot. At Stanford, I had
-          the pleasure of working with Nick Haber for one year to explore how AI
-          can enhance technology solutions for students with disabilities. I've
-          conducted various studies including systematic reviews, interview
-          studies, survey studies, and theoretical analysis, to better
-          understand the complex needs of students with disabilities and their
-          supporters. Read more about my{' '}
-          <Link to="/research">research projects here</Link>!
+          To support AI-Learners and the EdTech research field, I'm committing
+          to advancing the scientific understanding of how EdTech can help
+          students with disabilities. At Cornell University, I worked with the
+          Future of Learning Lab, advised by Rene Kizilcec, and the Enhancing
+          Ability Lab, advised by Shiri Azenkot. At Stanford, I had the pleasure
+          of working with Nick Haber for one year to explore how AI can enhance
+          technology solutions for students with disabilities. I've conducted
+          various studies including systematic reviews, interview studies,
+          survey studies, and theoretical analysis, to better understand the
+          complex needs of students with disabilities and their supporters. Read
+          more about my <Link to="/research">research projects here</Link>!
         </p>
 
         <h2>Professional Experience: MoVi (current)</h2>
@@ -156,8 +157,8 @@ const About = () => {
           Outside of school, research, working, and teaching, I love to
           exercise, travel, and read books. Growing up, I was a rhythmic
           gymnast, and I traveled around the country competing in various
-          competitions. I've also competed in several road cycling events, and
-          I'm now training for a marathon.
+          competitions. I've recently begun competing in cycling road races and
+          marathons.
         </p>
         <img
           className="hikingImg"
