@@ -14,9 +14,9 @@ const News = () => {
 
       <h2>Talks</h2>
       <img
-        src="./ctg.jpeg"
-        className="AdeleCTGImg"
-        alt="Adele at the Closing the Gap Conference"
+        src="./conference.jpeg"
+        className="conferenceImg"
+        alt="Adele at a Conference"
       />
 
       <p>

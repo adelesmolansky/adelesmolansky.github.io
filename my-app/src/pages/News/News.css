@@ -1,4 +1,4 @@
-.AdeleCTGImg {
+.conferenceImg {
   float: right;
   width: 20rem;
   margin-left: 1rem;
@@ -6,7 +6,7 @@
 
 /* Screen sizes */
 @media screen and (max-width: 45rem) {
-  .AdeleCTGImg {
+  .conferenceImg {
     width: 10rem;
   }
 }

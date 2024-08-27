@@ -6,7 +6,9 @@ const AiLearners = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 35rem)' });
 
   const LaraImg = () => {
-    return <img src="./lara.png" className="LaraImg" alt="Young girl" />;
+    return (
+      <img src="./adeleAndLara.png" className="LaraImg" alt="Young girl" />
+    );
   };
 
   return (

@@ -15,26 +15,28 @@ const About = () => {
         <div className="underImageText">
           <h2 className="decreaseMobileHeight"> Adele Smolansky</h2>
           <p className="decreaseMobileHeight">
-            Cornell University 2023: B.S. Computer Science
+            Cornell University 2023: BS. Computer Science
           </p>
           <p className="decreaseMobileHeight">
-            Stanford University PhD Candidate: Learning Sciences and Technology
-            Design
+            Stanford University 2024: Masters Educational Technology
+          </p>
+          <p className="decreaseMobileHeight">
+            Stanford University PhD - On Leave
           </p>
           <p className="decreaseMobileHeight">AI-Learners Founder and CEO</p>
-          <p className="decreaseMobileHeight">
-            <a
-              target="_blank"
-              href="mailto:adele@ai-learners.com"
-              rel="noreferrer"
-              className="email"
-            >
-              adele@ai-learners.com
-            </a>
-          </p>
 
           {/* Links */}
           <div className="linksContainer">
+            <p className="decreaseMobileHeight">
+              <a
+                target="_blank"
+                href="mailto:adele@ai-learners.com"
+                rel="noreferrer"
+                className="email"
+              >
+                adele@ai-learners.com
+              </a>
+            </p>
             <p className="decreaseMobileHeight">
               <a
                 target="_blank"
@@ -64,13 +66,12 @@ const About = () => {
         <p>
           My name is Adele Smolansky, and I'm an entrepreneur and researcher! I
           graduated Summa Cum Laude from Cornell University with a Bachelors of
-          Science in Computer Science as a Merrill Presidential Scholar. I'm now
-          pursuing a PhD at Stanford University in Learning Sciences and
-          Technology Design (LSTD), supported by the Stanford Graduate
-          Fellowship (SGF) and the National Science Fellowship (NSF). I am also
-          the student representative of the Society for Learning Analytics
-          Research <a href="https://www.solaresearch.org/">(SoLAR)</a> Executive
-          Committee.
+          Science in Computer Science as a Merrill Presidential Scholar. After
+          one year of my PhD at Stanford University in Learning Sciences and
+          Technology Design (LSTD), I decided to take a leave of absence and
+          graduate with a masters from Stanford. I am grateful for the Stanford
+          Graduate Fellowship (SGF) and the National Science Fellowship (NSF)
+          for supporting my PhD work.
         </p>
         <p>
           Inspired by my younger sister, who has a severe neurological
@@ -83,28 +84,32 @@ const About = () => {
           diverse physical, cognitive, and behavioral abilities. We recently won
           the Learning Engineering Tools Competition 2022 by Schmidt Futures!
           Check out the website at{' '}
-          <a href="https://ai-learners.com/">www.ai-Learners.com</a> and read
-          more on the <Link to="/ai-learners">AI-Learners page</Link>!
+          <a href="https://ai-learners.com/">ai-learners.com</a> and read more
+          on the <Link to="/ai-learners">AI-Learners page</Link>!
         </p>
         <p>
           To support AI-Learners and other entrepreneurs and researchers, I'm
           committing to advancing the scientific understanding of how EdTech can
-          help students with disabilities. At Cornell and during this summer,
-          I've been working at the Future of Learning Lab, advised by Rene
-          Kizilcec, and the Enhancing Ability Lab, advised by Shiri Azenkot.
-          I've conducted various studies including systematic reviews, interview
+          help students with disabilities. At Cornell University, I worked with
+          the Future of Learning Lab, advised by Rene Kizilcec, and the
+          Enhancing Ability Lab, advised by Shiri Azenkot. At Stanford, I had
+          the pleasure of working with Nick Haber for one year to explore how AI
+          can enhance technology solutions for students with disabilities. I've
+          conducted various studies including systematic reviews, interview
           studies, survey studies, and theoretical analysis, to better
           understand the complex needs of students with disabilities and their
           supporters. Read more about my{' '}
           <Link to="/research">research projects here</Link>!
         </p>
 
+        <h2>Professional Experience: MoVi (current)</h2>
         <p>
-          At Stanford, I will continue exploring the challenges that students
-          and their supporters face, while also exploring new AI solutions. I'm
-          looking forward to joining the Autonomous Agents Lab, advised by Nick
-          Haber, and the Landay Lab, advised by James Landay. I will also work
-          with Jason Yeatman and Maneesh Agrawala.
+          To further support the entrepreneurial ecosystem, I am working part
+          time as the Head of Product and AI Integration at{' '}
+          <a href="https://www.movipartners.com/">MoVi</a>, a venture firm that
+          incubates and invests in startups, advises companies, and brings
+          people together. I'm helping the company scale their operations with
+          technology and develop new products that enhance member experience.
         </p>
 
         <h2>Professional Experience: Google</h2>
@@ -151,26 +156,13 @@ const About = () => {
           Outside of school, research, working, and teaching, I love to
           exercise, travel, and read books. Growing up, I was a rhythmic
           gymnast, and I traveled around the country competing in various
-          competitions. Now, I love yoga, weight training, and hiking! I also
-          love to travel. You can see the places I have been to in the graphics
-          below:
+          competitions. I've also competed in several road cycling events, and
+          I'm now training for a marathon.
         </p>
-        <h3>The World: visited 25 countries (11.1%)</h3>
         <img
-          className="worldImg"
-          alt="world map"
-          src="http://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=450x300&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:9999999999999999999999999&chld=US|TQ|MX|JM|CL|CQ|CA|DO|AW|AR|IL|GB|CH|ES|RU|PT|NO|NL|FR|GR|IS|IT|DK|HR|BA"
-          width="450"
-          height="300"
-        ></img>
-
-        <h3>The United States: visited 24 states (48%)</h3>
-        <img
-          className="worldImg"
-          alt="united states map"
-          src="http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,336699&chco=d0d0d0,cc0000&chd=s:999999999999999999999999&chld=WIVTTXSCPARINCNYNJNHMNMIMAMDMEKYCAUTILFLCTVAWAGA"
-          width="440"
-          height="220"
+          className="hikingImg"
+          alt="hiking in canada"
+          src="./personal.jpeg"
         ></img>
       </div>
     </div>
