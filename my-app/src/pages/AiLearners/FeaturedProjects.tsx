@@ -48,7 +48,8 @@ export const FeaturedProjectsData = [
     title: 'Assignments',
     description:
       'Developed an assignment system for teachers to create and track assignments for their students.',
-    blogLink: 'TODO',
+    blogLink:
+      'https://ai-learners.com/resources/tips-and-tricks-for-using-a-teacher-account',
     figmaLink:
       'https://www.figma.com/design/4oP48qj8my1MDM3S14Ueo1/AI-Learners-Design-Examples--Public-Features-?node-id=1-48464',
     screenshot: './featured-projects/assignments.png',
@@ -77,7 +78,8 @@ export const FeaturedProjectsData = [
     title: 'Teacher Account Setup',
     description:
       'Built a robust dashboard for teachers to monitor student progress, visualize trends, and export reports. We use Machine Learning to provide personalized recommendations for each student. We also integrated Stripe (subscriptions), HubSpot (CRM), and Clever (SSO, rostering) to streamline operations and onboarding.',
-    blogLink: 'TODO',
+    blogLink:
+      'https://ai-learners.com/resources/school-teacher-account-setup-guide',
     screenshot: './featured-projects/teacher-account-setup.png',
   },
 ];
