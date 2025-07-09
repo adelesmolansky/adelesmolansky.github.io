@@ -20,7 +20,7 @@ function App() {
         <Route path="/ai-learners" element={<AiLearners />} />
         <Route path="/research" element={<Research />} />
         <Route path="/news" element={<News />} />
-        <Route path="/professional-development" element={<PD />} />
+        {/* <Route path="/professional-development" element={<PD />} /> */}
       </Routes>
     </BrowserRouter>
   );

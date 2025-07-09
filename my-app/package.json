@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^18.0.25",
+    "@types/react": "^18.3.23",
     "css-loader": "^6.7.1",
     "prettier": "2.7.1"
   }

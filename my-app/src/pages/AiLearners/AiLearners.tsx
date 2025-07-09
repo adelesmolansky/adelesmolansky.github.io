@@ -1,16 +1,8 @@
 import './AiLearners.css';
 import '../pages.css';
-import { useMediaQuery } from 'react-responsive';
+import { FeaturedProject, FeaturedProjectsData } from './FeaturedProjects';
 
 const AiLearners = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 35rem)' });
-
-  const LaraImg = () => {
-    return (
-      <img src="./adeleAndLara.png" className="LaraImg" alt="Young girl" />
-    );
-  };
-
   return (
     <div className="pageContainer">
       <a
@@ -23,66 +15,95 @@ const AiLearners = () => {
       </a>
 
       <div className="aboutContainer">
-        {/* Put the image at the start if we are not on mobile */}
-        {!isMobile && LaraImg()}
         <div className="aboutText">
           <p>
-            AI-Learners makes learning math accessible and engaging for students
-            with diverse cognitive, physical, and behavioral abilities through
-            personalized computer games and analytics.
-          </p>
-          {/* Put the image in the middle of the text if we are on mobile */}
-          {isMobile && LaraImg()}
-          <p>
-            Growing up, I watched my younger sister Lara, who has a severe
-            neurological disability called Rett Syndrome, struggle to learn
-            math. Lara inspired me to create AI-Learners and help my sister and
-            many other students with disabilities. In the summer of 2020, I
-            founded AI-Learners. While I studied at Cornell, I worked with
-            dozens of Cornell studies and faculty. The team now comprises
-            several Cornell graduates and other passionate individuals. We are
-            advised by software engineers from Google and other EdTech startups,
-            special education teachers, and accessibility specialists.
+            <strong>
+              <a
+                href="https://www.ai-learners.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                AI-Learners
+              </a>
+            </strong>{' '}
+            is a digital learning platform I founded to make early math and
+            literacy accessible for students with disabilities. Inspired by my
+            sister Lara, who has Rett Syndrome, I designed and built AI-Learners
+            from the ground up—leading engineering, product, and research.
           </p>
           <p>
-            AI-Learners now has 70+ math games available across grade levels
-            PreK-2nd grade, and hundreds of students, teachers, and parents all
-            across the country are using AI-Learners. Schools are piloting
-            AI-Learners over the summer - NYC private schools including
-            Manhattan Star Academy, iHope, Viscardi, Brooklyn Autism Center;
-            Perkins School for the Blind; Miami and Chicago Lighthouse for the
-            Blind; and various public schools in CT, NY, and CA. We also provide
-            individual subscriptions to parents to use AI-Learners with their
-            students at home.
+            I led a distributed team of 4 people, including Sam Masto (Head of
+            Engineering), Tran Hoang (Head of Product), and two offshore
+            developers. We are also supported by advisors including Cornell and
+            Stanford University Researchers, Google engineers, accessibility
+            specialists, and special education teachers. I am the CEO and
+            Founder of AI-Learners, working on the product, engineering, and
+            sales.
           </p>
+
           <p>
-            To meet the needs of students with diverse abilities, AI-Learners is
-            highly personalized. We offer different color and object modes (see
-            images below) as well as a robust in-game settings menu, where
-            teachers can customize different aspects of the game. We leverage
-            artificial intelligence to recommend new games for students to play
-            and we dynamically adjust level difficulty for students. We also
-            provide comprehensive analytics for teachers to help them better
-            understand their student's math abilities.
+            We raised $350,000 in grant funding and $250,000 in angel
+            investment.
           </p>
+          <h3>Development Timeline</h3>
+          <ul>
+            <li>
+              <strong>June 2020</strong>: Started AI-Learners as a Cornell
+              freshman
+            </li>
+            <li>
+              <strong>May 2023</strong>: Graduated and began working full-time
+            </li>
+            <li>
+              <strong>Sept 2023</strong>: Platform officially launched
+            </li>
+            <li>
+              <strong>Jan 2024</strong>: Reached revenue
+            </li>
+            <li>
+              <strong>Now</strong>: Supporting 1,000+ students and 100+ teachers
+              across 35 paying school districts
+            </li>
+          </ul>
           <p>
-            To date, AI-Learners has raised $65,000 in non-dilutive funding
-            through grant competitions and accelerators. We are currently
-            seeking additional funding to help us expand our impact. Please
-            contact me if you are interested in joining us on our journey to
-            helping students with disabilities learn math.
+            While I continue to support existing customers, AI-Learners is in
+            maintenance mode and I am actively exploring new job opportunities.
           </p>
         </div>
+        <img src="./adeleAndLara.png" className="LaraImg" alt="Young girl" />
       </div>
 
-      <div className="gameImgsContainer">
-        <img src="./counting.png" className="gameImg" alt="Counting apples" />
-        <img src="./addition.png" className="gameImg" alt="Adding apples" />
-        <img
-          src="./logic.png"
-          className="gameImg"
-          alt="Choose the fruit on the left"
-        />
+      {/* Featured Projects Section */}
+      <div>
+        <h3>Featured Projects</h3>
+        {FeaturedProjectsData.map((project) => (
+          <FeaturedProject
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            blogLink={project.blogLink}
+            figmaLink={project.figmaLink}
+            screenshot={project.screenshot}
+          />
+        ))}
+      </div>
+
+      {/* Game Screenshots Section */}
+      <div>
+        <h3>Game Screenshots</h3>
+        <p>
+          Here are some images of the games we built. We have over 250 games
+          across math and literacy.
+        </p>
+        <div className="gameImgsContainer">
+          <img src="./counting.png" className="gameImg" alt="Counting apples" />
+          <img src="./addition.png" className="gameImg" alt="Adding apples" />
+          <img
+            src="./logic.png"
+            className="gameImg"
+            alt="Choose the fruit on the left"
+          />
+        </div>
       </div>
     </div>
   );

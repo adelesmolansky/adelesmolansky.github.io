@@ -43,6 +43,20 @@
   text-decoration: underline;
 }
 
+.featuredProjectContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.screenshot {
+  width: 500px;
+  height: auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* Styling for the right side */
 .mainTextContainer {
   display: flex;

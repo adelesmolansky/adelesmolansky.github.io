@@ -10,6 +10,8 @@
 
 .LaraImg {
   width: 20rem;
+  height: auto;
+  object-fit: cover;
   margin-left: 3rem;
   margin-right: 3rem;
   float: right;
@@ -24,6 +26,11 @@
   flex: 30% 1;
   width: 30%;
   margin: 0.5rem 2rem 1rem 0rem;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Screen sizes */
