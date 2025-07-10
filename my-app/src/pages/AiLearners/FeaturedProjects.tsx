@@ -11,24 +11,43 @@ export const FeaturedProject = ({
   figmaLink?: string;
   screenshot: string;
 }) => (
-  <div className="featuredProjectContainer">
-    <div className="featuredProjectText">
-      <p>
-        <strong>{title}</strong>: {description}
-      </p>
-      <a href={blogLink} target="_blank" rel="noreferrer">
-        Blog
-      </a>
-      {'  |  '}
-      {/* figma link is optional */}
-      {figmaLink && (
-        <a href={figmaLink} target="_blank" rel="noreferrer">
-          Figma
-        </a>
-      )}
-    </div>
-    <div className="screenshotsContainer">
-      <img src={screenshot} alt={title} className="screenshot" />
+  <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="space-y-4">
+        <p className="text-lg text-gray-700 leading-relaxed">
+          <strong className="text-gray-900">{title}</strong>: {description}
+        </p>
+        <div className="flex space-x-4">
+          <a
+            href={blogLink}
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+          >
+            Blog
+          </a>
+          {figmaLink && (
+            <>
+              <span className="text-gray-400">|</span>
+              <a
+                href={figmaLink}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+              >
+                Figma
+              </a>
+            </>
+          )}
+        </div>
+      </div>
+      <div className="flex justify-center lg:justify-end">
+        <img
+          src={screenshot}
+          alt={title}
+          className="max-w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        />
+      </div>
     </div>
   </div>
 );

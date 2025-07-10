@@ -1,6 +1,3 @@
-import './pd.css';
-import '../pages.css';
-
 const EXAMPLE_SESSIONS = [
   {
     title:
@@ -107,205 +104,239 @@ const EXAMPLE_SESSIONS = [
 ];
 
 const PD = () => (
-  <div className="pageContainer">
-    <h1>Professional Development</h1>
-    <p>
-      Hi! My name is Adele Smolansky and I am a PhD Candidate at Stanford
-      University specializing in Learning Sciences and Technology Design. I am
-      also the founder of an EdTech platform that helps students with all
-      abilities learn math and literacy. I love technology and I want to empower
-      teachers with the resources they need to use technology.{' '}
-      <b>
-        Work with me to learn how to save time, improve learning outcomes for
-        your students, and make learning more fun for everyone!
-      </b>
-    </p>
+  <div className="min-h-screen bg-gray-50">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="bg-white rounded-lg shadow-md p-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-6">
+          Professional Development
+        </h1>
+        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          Hi! My name is Adele Smolansky and I am a PhD Candidate at Stanford
+          University specializing in Learning Sciences and Technology Design. I
+          am also the founder of an EdTech platform that helps students with all
+          abilities learn math and literacy. I love technology and I want to
+          empower teachers with the resources they need to use technology.{' '}
+          <strong>
+            Work with me to learn how to save time, improve learning outcomes
+            for your students, and make learning more fun for everyone!
+          </strong>
+        </p>
 
-    <p>
-      I offer professional development for teachers, school administrators,
-      special education specialists, paraprofessionals, and everyone else at
-      schools. <b>We should all learn to use technology!</b> My work is all
-      supported <b>research backed methods</b> on how to best use technology for
-      education. Sessions may be in person or virtual. Email me{' '}
-      <a target="_blank" href="mailto:adele@ai-learners.com" rel="noreferrer">
-        adele@ai-learners.com
-      </a>{' '}
-      with any questions or to schedule a session! Pricing is based on the
-      session duration and preperation required.
-    </p>
+        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          I offer professional development for teachers, school administrators,
+          special education specialists, paraprofessionals, and everyone else at
+          schools. <strong>We should all learn to use technology!</strong> My
+          work is all supported <strong>research backed methods</strong> on how
+          to best use technology for education. Sessions may be in person or
+          virtual. Email me{' '}
+          <a
+            target="_blank"
+            href="mailto:adele@ai-learners.com"
+            rel="noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            adele@ai-learners.com
+          </a>{' '}
+          with any questions or to schedule a session! Pricing is based on the
+          session duration and preperation required.
+        </p>
 
-    <p>
-      I want to ensure that each session is tailored to your students, teachers,
-      and administrators. Here are some ways that we can{' '}
-      <b>personalize the experience</b>:
-      <ul>
-        <li>
-          <b>Types of learners:</b> Special education only, inclusive
-          classrooms, or general education only
-        </li>
-        <li>
-          <b>Grade levels:</b> Elementary school, middle school, high school, or
-          mix
-        </li>
-        <li>
-          <b>Subject areas:</b> Math, literacy, science, music and art, social
-          emotional learning, college/career readiness, special education goals
-          (e.g., daily life skills), or mix
-        </li>
-        <li>
-          <b>Duration:</b> single presentation for 30 minutes - 1 hour, half day
-          or full day workshop, multiple sessions over time of varying durations
-        </li>
-        <li>
-          <b>Style:</b> presentation only, hands-on activities, small group
-          activities, or a mix
-        </li>
-      </ul>
-    </p>
-
-    <button
-      className="schedule-button"
-      type="button"
-      onClick={() => {
-        const mailto =
-          'mailto:adele@ai-learners.com?subject=PD for K-12 Inquiry&body=Hi! I am interesed in your professional development services!';
-        window.open(mailto, '_blank');
-      }}
-    >
-      Email me to schedule!
-    </button>
-
-    <h2>Possible Learning Outcomes</h2>
-    <ul>
-      <li>
-        Develop a better understanding of AI (e.g., technical definition, AI
-        bias, legal regulations)
-        <li>
-          Learn what AI tools exist that can be used for education
-          <ul>
-            <li>Understand how AI tools can help students and teachers</li>
-            <li>
-              Understand the different use cases for AI tools for students and
-              teachers
-            </li>
-          </ul>
-        </li>
-        <li>
-          Learn how to select and evaluate tools
-          <ul>
-            <li>
-              Get recommendations from Adele based on your students and schools'
-              needs
-            </li>
-            <li>
-              Learn how to evaluate tools yourself and select the best tools for
-              specific use cases and students
-            </li>
-            <li>
-              Get guidance on how to balance free vs. paid tools and when to ask
-              schools or purchase tools
-            </li>
-            <li>
-              Learning how to involve students in the process for selecting
-              tools and collaboratively with other teachers
-            </li>
-          </ul>
-        </li>
-        <li>
-          Learn how to use AI tools in different contexts (e.g., independent vs
-          group work) and successfully integrate the tools into the classroom
-          and independent learning
+        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          I want to ensure that each session is tailored to your students,
+          teachers, and administrators. Here are some ways that we can{' '}
+          <strong>personalize the experience</strong>:
+        </p>
+        <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-700">
           <li>
-            How to mitigate typical concerns and worries of using AI (e.g.,
-            overreliance, cheating, hallucinations, loss of critical thinking,
-            creativity, and social skills)
-          </li>
-        </li>
-      </li>
-    </ul>
-
-    <h2>Positive Reactions</h2>
-    <p>
-      Teachers and administrators have LOVED my sessions and I have recieved
-      very possible feedback. Here are some quotes demonstrating what people
-      have learned and how they enjoyed my training:
-      <ul>
-        <li>
-          "Great presentation from Adele; very imformative and helpful" -{' '}
-          <a href="https://www.linkedin.com/posts/massachusetts-association-of-766-approved-private-schools_educational-website-for-students-with-cvi-activity-7128430778308300801-ksok?utm_source=share&utm_medium=member_desktop">
-            {' '}
-            MAAAPS{' '}
-          </a>
-        </li>
-        <li>
-          "I learned about new AI tools that I haven't seen before. Also I
-          appreciated getting to work with my colleagues to develop a deeper
-          understanding of how these tools could be used with our students. "
-        </li>
-        <li>
-          "The workshop was really fun! I liked the energy and not being
-          lectured."
-        </li>
-        <li>
-          "It was helpful to hear from someone passionate about AI, as a balance
-          to those who are more on the fence."
-        </li>
-        <li>
-          "Learned that there is a plethora of AI tools out there to use in the
-          classroom. Google Expedition and Classcraft will be used in the future
-          to help engage students."
-        </li>
-        <li>
-          "That AI can boost student engagement in many formats, especially
-          game-style programs and that AI can enhance the grading process with
-          individualized analyses. "
-        </li>
-      </ul>
-    </p>
-
-    <h2>Example Sessions</h2>
-    <p>
-      I have facilated many different sessions for schools and districts. I
-      personalize each session to the needs of the teachers and students in the
-      school. Here are a few examples of sessions that I did in the past.
-    </p>
-
-    {EXAMPLE_SESSIONS.map((session) => (
-      <>
-        <h3>{session.title}</h3>
-        <ul>
-          <li>
-            <b>Audience: </b>
-            {session.audience}
+            <strong>Types of learners:</strong> Special education only,
+            inclusive classrooms, or general education only
           </li>
           <li>
-            <b>Format: </b> {session.format}
+            <strong>Grade levels:</strong> Elementary school, middle school,
+            high school, or mix
           </li>
           <li>
-            <b>Summary: </b> {session.summary}
+            <strong>Subject areas:</strong> Math, literacy, science, music and
+            art, social emotional learning, college/career readiness, special
+            education goals (e.g., daily life skills), or mix
           </li>
           <li>
-            <b>Learning Outcomes: </b>
-            <ul>
-              {session.learningOutcomes.map((outcome) => (
-                <li>{outcome}</li>
-              ))}
+            <strong>Duration:</strong> single presentation for 30 minutes - 1
+            hour, half day or full day workshop, multiple sessions over time of
+            varying durations
+          </li>
+          <li>
+            <strong>Style:</strong> presentation only, hands-on activities,
+            small group activities, or a mix
+          </li>
+        </ul>
+
+        <button
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors mb-8"
+          type="button"
+          onClick={() => {
+            const mailto =
+              'mailto:adele@ai-learners.com?subject=PD for K-12 Inquiry&body=Hi! I am interesed in your professional development services!';
+            window.open(mailto, '_blank');
+          }}
+        >
+          Email me to schedule!
+        </button>
+
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          Possible Learning Outcomes
+        </h2>
+        <ul className="list-disc pl-6 mb-8 space-y-4 text-gray-700">
+          <li>
+            Develop a better understanding of AI (e.g., technical definition, AI
+            bias, legal regulations)
+            <ul className="list-disc pl-6 mt-2 space-y-2">
+              <li>
+                Learn what AI tools exist that can be used for education
+                <ul className="list-disc pl-6 mt-2 space-y-1">
+                  <li>
+                    Understand how AI tools can help students and teachers
+                  </li>
+                  <li>
+                    Understand the different use cases for AI tools for students
+                    and teachers
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Learn how to select and evaluate tools
+                <ul className="list-disc pl-6 mt-2 space-y-1">
+                  <li>
+                    Get recommendations from Adele based on your students and
+                    schools' needs
+                  </li>
+                  <li>
+                    Learn how to evaluate tools yourself and select the best
+                    tools for specific use cases and students
+                  </li>
+                  <li>
+                    Get guidance on how to balance free vs. paid tools and when
+                    to ask schools or purchase tools
+                  </li>
+                  <li>
+                    Learning how to involve students in the process for
+                    selecting tools and collaboratively with other teachers
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Learn how to use AI tools in different contexts (e.g.,
+                independent vs group work) and successfully integrate the tools
+                into the classroom and independent learning
+                <ul className="list-disc pl-6 mt-2 space-y-1">
+                  <li>
+                    How to mitigate typical concerns and worries of using AI
+                    (e.g., overreliance, cheating, hallucinations, loss of
+                    critical thinking, creativity, and social skills)
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
-      </>
-    ))}
-    <button
-      className="schedule-button"
-      type="button"
-      onClick={() => {
-        const mailto =
-          'mailto:adele@ai-learners.com?subject=PD for K-12 Inquiry&body=Hi! I am interesed in your professional development services!';
-        window.open(mailto, '_blank');
-      }}
-    >
-      Email me to schedule!
-    </button>
+
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          Positive Reactions
+        </h2>
+        <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+          Teachers and administrators have LOVED my sessions and I have recieved
+          very possible feedback. Here are some quotes demonstrating what people
+          have learned and how they enjoyed my training:
+        </p>
+        <ul className="list-disc pl-6 mb-8 space-y-3 text-gray-700">
+          <li>
+            "Great presentation from Adele; very imformative and helpful" -{' '}
+            <a
+              href="https://www.linkedin.com/posts/massachusetts-association-of-766-approved-private-schools_educational-website-for-students-with-cvi-activity-7128430778308300801-ksok?utm_source=share&utm_medium=member_desktop"
+              className="text-blue-600 hover:text-blue-800"
+            >
+              {' '}
+              MAAAPS{' '}
+            </a>
+          </li>
+          <li>
+            "I learned about new AI tools that I haven't seen before. Also I
+            appreciated getting to work with my colleagues to develop a deeper
+            understanding of how these tools could be used with our students. "
+          </li>
+          <li>
+            "The workshop was really fun! I liked the energy and not being
+            lectured."
+          </li>
+          <li>
+            "It was helpful to hear from someone passionate about AI, as a
+            balance to those who are more on the fence."
+          </li>
+          <li>
+            "Learned that there is a plethora of AI tools out there to use in
+            the classroom. Google Expedition and Classcraft will be used in the
+            future to help engage students."
+          </li>
+          <li>
+            "That AI can boost student engagement in many formats, especially
+            game-style programs and that AI can enhance the grading process with
+            individualized analyses. "
+          </li>
+        </ul>
+
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          Example Sessions
+        </h2>
+        <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+          I have facilated many different sessions for schools and districts. I
+          personalize each session to the needs of the teachers and students in
+          the school. Here are a few examples of sessions that I did in the
+          past.
+        </p>
+
+        <div className="space-y-8">
+          {EXAMPLE_SESSIONS.map((session, index) => (
+            <div key={index} className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {session.title}
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <strong>Audience: </strong>
+                  {session.audience}
+                </li>
+                <li>
+                  <strong>Format: </strong> {session.format}
+                </li>
+                <li>
+                  <strong>Summary: </strong> {session.summary}
+                </li>
+                <li>
+                  <strong>Learning Outcomes: </strong>
+                  <ul className="list-disc pl-6 mt-2 space-y-1">
+                    {session.learningOutcomes.map((outcome, idx) => (
+                      <li key={idx}>{outcome}</li>
+                    ))}
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <button
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors mt-8"
+          type="button"
+          onClick={() => {
+            const mailto =
+              'mailto:adele@ai-learners.com?subject=PD for K-12 Inquiry&body=Hi! I am interesed in your professional development services!';
+            window.open(mailto, '_blank');
+          }}
+        >
+          Email me to schedule!
+        </button>
+      </div>
+    </div>
   </div>
 );
 

@@ -1,14 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
-import './Navbar.css';
-
 const PAGES = [
-  // { title: 'About', path: '/about' },
+  { title: 'About', path: '/about' },
   { title: 'AI-Learners', path: '/ai-learners' },
   { title: 'Research', path: '/research' },
   { title: 'News', path: '/news' },
-  { title: 'K-12 PD', path: '/professional-development' },
 ];
 
 const Navbar = () => {
@@ -17,36 +14,28 @@ const Navbar = () => {
   // This width needs to match what is in the css file
   const isMobile = useMediaQuery({ query: '(max-width: 60rem)' });
 
-  const getLinkStyle = (isSelected: boolean) => {
-    if (isSelected)
-      return {
-        fontWeight: 900,
-        fontSize: '1.25rem',
-        marginTop: '0.4rem',
-      };
-    else
-      return {
-        fontWeight: 400,
-        fontSize: '1.1rem',
-        marginTop: '0.55rem',
-      };
-  };
-
   return (
-    <div className="navbarContainer">
+    <div className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
       {/* Always write my name in the left corner */}
       {!isMobile && (
-        <Link className={'navbarAdeleName navbarItem'} to="/about">
+        <Link
+          className="text-xl font-bold text-gray-800 hover:text-gray-600 transition-colors"
+          to="/about"
+        >
           Adele Smolansky
         </Link>
       )}
 
-      <div className="navbarItemsContainer">
+      <div className="flex space-x-8">
         {PAGES.map((item, idx) => (
           <Link
-            className="navbarItem"
+            key={item.path}
+            className={`transition-all duration-200 hover:text-gray-600 ${
+              location.pathname === item.path
+                ? 'font-black text-xl mt-1'
+                : 'font-normal text-lg mt-2'
+            }`}
             to={PAGES[idx].path}
-            style={getLinkStyle(location.pathname === item.path)}
           >
             {item.title}
           </Link>

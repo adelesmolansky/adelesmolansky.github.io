@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import '../pages.css';
-
 const PUBLICATIONS = [
   {
     title:
@@ -98,73 +96,119 @@ const Research = () => {
   );
 
   return (
-    <div className="pageContainer">
-      <h1>Research</h1>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="bg-white rounded-lg shadow-md p-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-8">Research</h1>
 
-      <h2>Publications</h2>
-      <ul>
-        {PUBLICATIONS.map((data, idx) => (
-          <li>
-            <b>{data.title}</b> {!data.DOI && <i>(Publication in progress)</i>}
-            <ul className="bulletedList">
-              {data.DOI && (
-                <li>
-                  DOI: <a href={data.DOI}>{data.DOI}</a>
-                </li>
-              )}
-              <li>Authors: {data.authors}</li>
-              <li>Publication: {data.publication}</li>
-              <li>
-                {data.notes} <a href={data.link}>{data.linkText}</a>
+          <ul className="space-y-8">
+            {PUBLICATIONS.map((data, idx) => (
+              <li key={idx} className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {data.title}{' '}
+                  {!data.DOI && (
+                    <span className="italic text-gray-600">
+                      (Publication in progress)
+                    </span>
+                  )}
+                </h3>
+                <ul className="space-y-2 text-gray-700">
+                  {data.DOI && (
+                    <li>
+                      <strong>DOI:</strong>{' '}
+                      <a
+                        href={data.DOI}
+                        className="text-blue-600 hover:text-blue-800"
+                      >
+                        {data.DOI}
+                      </a>
+                    </li>
+                  )}
+                  <li>
+                    <strong>Authors:</strong> {data.authors}
+                  </li>
+                  <li>
+                    <strong>Publication:</strong> {data.publication}
+                  </li>
+                  <li>
+                    {data.notes}{' '}
+                    <a
+                      href={data.link}
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      {data.linkText}
+                    </a>
+                  </li>
+                  <li>
+                    <button
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors"
+                      onClick={() => {
+                        const newList = [...openAbstractsList];
+                        newList[idx] = !openAbstractsList[idx];
+                        setOpenAbstractsList(newList);
+                      }}
+                    >
+                      {openAbstractsList[idx]
+                        ? 'Hide Abstract'
+                        : 'View Abstract'}
+                    </button>
+                    {openAbstractsList[idx] && (
+                      <div className="mt-4 p-4 bg-white rounded border border-gray-200">
+                        <p className="text-gray-700 leading-relaxed">
+                          {data.abstract}
+                        </p>
+                      </div>
+                    )}
+                  </li>
+                </ul>
               </li>
-              <li>
-                <button
-                  className="openAbstractButton"
-                  onClick={() => {
-                    const newList = [...openAbstractsList]; // Create a new array
-                    newList[idx] = !openAbstractsList[idx]; // Update the value at the specific index
-                    setOpenAbstractsList(newList); // Update the state with the new array
-                  }}
-                >
-                  {openAbstractsList[idx] ? 'Abstract:' : 'View Abstract'}
-                </button>
-                {openAbstractsList[idx] ? data.abstract : ''}
-              </li>
-            </ul>
-          </li>
-        ))}
-      </ul>
+            ))}
+          </ul>
 
-      <h2>Past Projects with Paper Submissions Pending</h2>
-      <ul>
-        {PAST_PROJECTS.map((data, idx) => {
-          const offsetidx = idx + PUBLICATIONS.length;
-          return (
-            <li>
-              <b>{data.title}</b>{' '}
-              <ul>
-                <li>Authors: {data.authors}</li>
-                <li>Pending Submission: {data.pendingSubmission}</li>
-                <li>
-                  <button
-                    className="openAbstractButton"
-                    onClick={() => {
-                      const newList = [...openAbstractsList]; // Create a new array
-                      newList[offsetidx] = !openAbstractsList[offsetidx]; // Update the value at the specific index
-                      setOpenAbstractsList(newList); // Update the state with the new array
-                    }}
-                  >
-                    {openAbstractsList[offsetidx]
-                      ? 'Abstract:'
-                      : 'View Abstract'}
-                  </button>
-                  {openAbstractsList[offsetidx] ? data.abstract : ''}
+          <ul className="space-y-8">
+            {PAST_PROJECTS.map((data, idx) => {
+              const offsetidx = idx + PUBLICATIONS.length;
+              return (
+                <li key={idx} className="bg-gray-50 rounded-lg p-6 mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    {data.title}
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>
+                      <strong>Authors:</strong> {data.authors}
+                    </li>
+                    <li>
+                      <strong>Pending Submission:</strong>{' '}
+                      {data.pendingSubmission}
+                    </li>
+                    <li>
+                      <button
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors"
+                        onClick={() => {
+                          const newList = [...openAbstractsList];
+                          newList[offsetidx] = !openAbstractsList[offsetidx];
+                          setOpenAbstractsList(newList);
+                        }}
+                      >
+                        {openAbstractsList[offsetidx]
+                          ? 'Hide Abstract'
+                          : 'View Abstract'}
+                      </button>
+                      {openAbstractsList[offsetidx] && (
+                        <div className="mt-4 p-4 bg-white rounded border border-gray-200">
+                          <p className="text-gray-700 leading-relaxed">
+                            {data.abstract}
+                          </p>
+                        </div>
+                      )}
+                    </li>
+                  </ul>
                 </li>
-              </ul>
-            </li>
-          );
-        })}
-      </ul>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
