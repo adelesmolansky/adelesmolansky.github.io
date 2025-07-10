@@ -84,8 +84,9 @@ const About = () => (
                 my PhD work.
               </p>
 
+              {/* AI-Learners Section */}
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Professional Experience: AI-Learners (2020 - Present)
+                Professional Experience: AI-Learners (June 2020 - Present)
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Inspired by my younger sister, who has a severe neurological
@@ -123,24 +124,50 @@ const About = () => (
                 !
               </p>
 
+              {/* Ellerra Section */}
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Professional Experience: MoVi (2024-2025)
+                Professional Experience: Ellerra (2024 - Present)
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                To further support the entrepreneurial ecosystem, I am working
-                part time as the Head of Product and AI Integration at{' '}
+                I am currently working as an AI and Product Engineer consultant
+                at{' '}
+                <a
+                  href="https://www.ellerra.com/"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ellerra
+                </a>
+                . I am building an accounting Practice Management platform to
+                make accounting processes more efficient with automation and LLM
+                integration. My work includes collaborating with leadership to
+                create product specifications and managing engineers to build
+                the product. The tech stack includes React, TypeScript,
+                Tailwind, Next.js, and a Supabase backend, and I am using Gemini
+                to build financial agents.
+              </p>
+
+              {/* MoVi Section */}
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                Professional Experience: MoVi (May - October 2024)
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                At{' '}
                 <a
                   href="https://www.movipartners.com/"
                   className="text-blue-600 hover:text-blue-800 transition-colors"
                 >
                   MoVi
                 </a>
-                , a venture firm that incubates and invests in startups, advises
-                companies, and brings people together. I'm helping the company
-                scale their operations with technology and develop new products
-                that enhance member experience.
+                , I worked as an AI and Product Integration Contractor. In this
+                role, I advised leadership on AI strategy to optimize internal
+                efficiencies and develop an improved product roadmap. I also
+                cleaned and organized customer data to support scalable
+                operations and enable data-driven decision making.
               </p>
 
+              {/* Google Section */}
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                 Professional Experience: Google
               </h2>
