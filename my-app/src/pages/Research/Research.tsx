@@ -23,7 +23,7 @@ const PUBLICATIONS = [
     authors:
       'Adele Smolansky, Catherine Baker, Shiri Azenkot, and Lauren Milne',
     publication: 'ACM Digital Library.',
-    notes: 'We presenting a poster at the CHI 2024 conference.',
+    notes: 'We presented a poster at the CHI 2024 conference.',
     abstract:
       "Assistive technology (AT) can help children with disabilities improve their learning outcomes, social skills, and autonomy, but past work has shown that AT is often abandoned or underutilized in classrooms and at home. However, little research focuses on the perspectives of the AT industry professionals who are supporting children, even though they often provide direct and indirect support to their customers. As such, we conducted semi-structured interviews with 21 AT industry professionals to investigate how AT companies are involved in the successful integration of AT into a child's life. We uncovered three strong needs: (1) improving communication channels between AT industry and support networks, (2) demonstrating the efficacy of AT and (3) exploring long term support of AT.",
   },
@@ -32,7 +32,8 @@ const PUBLICATIONS = [
       'How Teachers of the Visually Impaired Support Students with Cortical/Cerebral Vision Impairments: Exploring Opportunities for Technology Design',
     authors: 'Adele Smolansky, Miranda Yang, and Shiri Azenkot',
     publication: 'ACM Digital Library.',
-    notes: 'We presenting a poster at the ASSETS 2024 conference.',
+    DOI: 'https://dl.acm.org/doi/10.1145/3411764.3445755',
+    notes: 'We presented a poster at the ASSETS 2024 conference.',
     abstract:
       'Cortical/cerebral visual impairment (CVI) is a neurological vision impairment that affects the visual processing centers of the brain. Digital learning tools are becoming increasingly popular in schools, but limited research has examined how tools can help students with CVI, who have distinct academic needs. To better understand how tools should be designed to help students with CVI, we interviewed 20 U.S.-based Teachers of the Visually Impaired (TVIs) who worked with students with CVI. We found that our participants analyzed very specific information about students’ visual, learning, and social needs and their environment to create accommodations for academic materials and determine students’ goals. Participants were eager to use a new learning tool designed for students with CVI. We discuss how tools can provide students with CVI more accessible learning materials, decrease workload for TVIs, and help families and other school staff support their students.',
   },

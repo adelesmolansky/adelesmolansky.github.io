@@ -9,11 +9,11 @@ const About = () => (
           <div className="bg-white rounded-lg shadow-md p-6 sticky top-8">
             <img
               src="./headshot.jpg"
-              className="w-full h-auto rounded-lg mb-6"
+              className="w-full h-auto rounded-lg shadow-md mb-6"
               alt="Headshot of Adele"
             />
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-gray-900">
+              <h2 className="text-xl font-bold text-gray-900">
                 Adele Smolansky
               </h2>
               <p className="text-gray-700">
@@ -71,7 +71,7 @@ const About = () => (
           <div className="bg-white rounded-lg shadow-md p-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-8">About</h1>
             <div className="prose prose-lg max-w-none">
-              <p className="mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 My name is Adele Smolansky, and I'm an entrepreneur, researcher,
                 and innovator! I graduated Summa Cum Laude from Cornell
                 University with a Bachelors of Science in Computer Science as a
@@ -84,15 +84,16 @@ const About = () => (
                 my PhD work.
               </p>
 
+              {/* AI-Learners Section */}
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Professional Experience: AI-Learners (2020 - Present)
+                Professional Experience: AI-Learners (June 2020 - Present)
               </h2>
-              <p className="mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Inspired by my younger sister, who has a severe neurological
                 disability called Rett Syndrome, I founded{' '}
                 <a
                   href="https://ai-learners.com/"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
                 >
                   AI-Learners
                 </a>
@@ -109,47 +110,73 @@ const About = () => (
                 at{' '}
                 <a
                   href="https://ai-learners.com/"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
                 >
                   ai-learners.com
                 </a>{' '}
                 and read more on the{' '}
                 <Link
                   to="/ai-learners"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
                 >
                   AI-Learners page
                 </Link>
                 !
               </p>
 
+              {/* Ellerra Section */}
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Professional Experience: MoVi (2024-2025)
+                Professional Experience: Ellerra (2024 - Present)
               </h2>
-              <p className="mb-6">
-                To further support the entrepreneurial ecosystem, I am working
-                part time as the Head of Product and AI Integration at{' '}
+              <p className="text-gray-700 leading-relaxed mb-6">
+                I am currently working as an AI and Product Engineer consultant
+                at{' '}
+                <a
+                  href="https://www.ellerra.com/"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ellerra
+                </a>
+                . I am building an accounting Practice Management platform to
+                make accounting processes more efficient with automation and LLM
+                integration. My work includes collaborating with leadership to
+                create product specifications and managing engineers to build
+                the product. The tech stack includes React, TypeScript,
+                Tailwind, Next.js, and a Supabase backend, and I am using Gemini
+                to build financial agents.
+              </p>
+
+              {/* MoVi Section */}
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                Professional Experience: MoVi (May - October 2024)
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                At{' '}
                 <a
                   href="https://www.movipartners.com/"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
                 >
                   MoVi
                 </a>
-                , a venture firm that incubates and invests in startups, advises
-                companies, and brings people together. I'm helping the company
-                scale their operations with technology and develop new products
-                that enhance member experience.
+                , I worked as an AI and Product Integration Contractor. In this
+                role, I advised leadership on AI strategy to optimize internal
+                efficiencies and develop an improved product roadmap. I also
+                cleaned and organized customer data to support scalable
+                operations and enable data-driven decision making.
               </p>
 
+              {/* Google Section */}
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                 Professional Experience: Google
               </h2>
-              <p className="mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 I had the pleasure of working at Google for two summers as a
                 Software Engineering Intern, where I met incredible people and
                 became a stronger computer scientist.
               </p>
-              <p className="mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 <strong>
                   Summer 2021: STEP Intern on the Google Drive Team
                 </strong>
@@ -165,7 +192,7 @@ const About = () => (
                 web pages and conducted accessibility testing using Google's
                 accessibility testing framework.
               </p>
-              <p className="mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 <strong>
                   Summer 2022: SWE Intern on the Android Accessibility Team
                 </strong>
@@ -183,19 +210,19 @@ const About = () => (
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                 Teaching Experience
               </h2>
-              <p className="mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 I worked as a Teaching Assistant for two years at Cornell
                 University. I worked with two classes at Cornell University:
               </p>
-              <ul className="list-disc pl-6 mb-6">
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
                 <li>NBA 3000: Designing New Ventures</li>
                 <li>eLab Student Business Accelerator</li>
               </ul>
 
-              <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
+              <h1 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                 Research Experience
               </h1>
-              <p className="mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 While at Cornell University and Stanford University, I conducted
                 research in the Human Computer Interaction (HCI) field. At
                 Cornell, I worked with the Future of Learning Lab, advised by
@@ -207,17 +234,17 @@ const About = () => (
                 with disabilities and their supporters. Read more about my{' '}
                 <Link
                   to="/research"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
                 >
                   research projects here
                 </Link>
                 !
               </p>
 
-              <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
+              <h1 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                 Personal
               </h1>
-              <p className="mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Outside of school, research, working, and teaching, I love to
                 swim, bike, run, travel, and read books. I compete in various
                 cycling, running, and triathlon races! Growing up, I was a

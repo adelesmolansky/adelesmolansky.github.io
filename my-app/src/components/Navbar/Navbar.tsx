@@ -1,47 +1,73 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
-
-const PAGES = [
-  { title: 'About', path: '/about' },
-  { title: 'AI-Learners', path: '/ai-learners' },
-  { title: 'Research', path: '/research' },
-  { title: 'News', path: '/news' },
-];
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  // This width needs to match what is in the css file
-  const isMobile = useMediaQuery({ query: '(max-width: 60rem)' });
+  const isActive = (path: string) => location.pathname === path;
+
+  const navItems = [
+    { path: '/', label: 'About' },
+    { path: '/ai-learners', label: 'AI-Learners' },
+    { path: '/research', label: 'Research' },
+    { path: '/news', label: 'News' },
+  ];
 
   return (
-    <div className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
-      {/* Always write my name in the left corner */}
-      {!isMobile && (
-        <Link
-          className="text-xl font-bold text-gray-800 hover:text-gray-600 transition-colors"
-          to="/about"
-        >
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-brand">
           Adele Smolansky
         </Link>
-      )}
 
-      <div className="flex space-x-8">
-        {PAGES.map((item, idx) => (
-          <Link
-            key={item.path}
-            className={`transition-all duration-200 hover:text-gray-600 ${
-              location.pathname === item.path
-                ? 'font-black text-xl mt-1'
-                : 'font-normal text-lg mt-2'
+        {/* Desktop Navigation */}
+        <div className="navbar-desktop">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`navbar-link ${
+                isActive(item.path) ? 'navbar-link-active' : ''
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile menu button */}
+        <button
+          className="navbar-mobile-button"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle navigation menu"
+        >
+          <span
+            className={`navbar-hamburger ${
+              isOpen ? 'navbar-hamburger-open' : ''
             }`}
-            to={PAGES[idx].path}
-          >
-            {item.title}
-          </Link>
-        ))}
+          ></span>
+        </button>
       </div>
-    </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="navbar-mobile">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`navbar-mobile-link ${
+                isActive(item.path) ? 'navbar-mobile-link-active' : ''
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 };
 
