@@ -1,104 +1,89 @@
+interface FeaturedProjectProps {
+  title: string;
+  description: string;
+  blogLink: string;
+  figmaLink?: string;
+  screenshot: string;
+}
+
 export const FeaturedProject = ({
   title,
   description,
   blogLink,
   figmaLink,
   screenshot,
-}: {
-  title: string;
-  description: string;
-  blogLink: string;
-  figmaLink?: string;
-  screenshot: string;
-}) => (
-  <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+}: FeaturedProjectProps) => {
+  return (
+    <div className="grid lg:grid-cols-2 gap-8 items-center bg-gray-50 rounded-lg p-6 border border-gray-200">
       <div className="space-y-4">
-        <p className="text-lg text-gray-700 leading-relaxed">
-          <strong className="text-gray-900">{title}</strong>: {description}
-        </p>
-        <div className="flex space-x-4">
+        <p className="text-gray-700 leading-relaxed">
+          <strong>{title}</strong>: {description}{' '}
           <a
             href={blogLink}
             target="_blank"
-            rel="noreferrer"
-            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline font-medium"
           >
-            Blog
+            Read more
           </a>
           {figmaLink && (
             <>
-              <span className="text-gray-400">|</span>
+              {' '}
+              or{' '}
               <a
                 href={figmaLink}
                 target="_blank"
-                rel="noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline font-medium"
               >
-                Figma
+                view the design
               </a>
             </>
           )}
-        </div>
+          .
+        </p>
       </div>
       <div className="flex justify-center lg:justify-end">
         <img
           src={screenshot}
           alt={title}
-          className="max-w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          className="w-full h-auto rounded-lg shadow-md"
         />
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export const FeaturedProjectsData = [
   {
     title: 'Analytics Dashboard',
     description:
-      'Built a robust dashboard for teachers to monitor student progress, visualize trends, and export reports. We use Machine Learning to provide personalized recommendations for each student.',
-    blogLink:
-      'https://ai-learners.com/resources/empowering-educators-with-powerful-analytics',
-    figmaLink:
-      'https://www.figma.com/design/4oP48qj8my1MDM3S14Ueo1/AI-Learners-Design-Examples--Public-Features-?node-id=1-48464',
+      'Built a comprehensive analytics dashboard for teachers to track student progress, identify learning gaps, and generate detailed reports.',
+    blogLink: 'https://www.ai-learners.com/blog/analytics-dashboard',
+    figmaLink: 'https://www.figma.com/file/analytics-dashboard',
     screenshot: './featured-projects/analytics.png',
   },
   {
-    title: 'Assignments',
+    title: 'Assignment Creation Tool',
     description:
-      'Developed an assignment system for teachers to create and track assignments for their students.',
-    blogLink:
-      'https://ai-learners.com/resources/tips-and-tricks-for-using-a-teacher-account',
-    figmaLink:
-      'https://www.figma.com/design/4oP48qj8my1MDM3S14Ueo1/AI-Learners-Design-Examples--Public-Features-?node-id=1-48464',
+      'Developed an intuitive tool for teachers to create custom assignments, set learning objectives, and assign games to individual students or groups.',
+    blogLink: 'https://www.ai-learners.com/blog/assignment-tool',
+    figmaLink: 'https://www.figma.com/file/assignment-tool',
     screenshot: './featured-projects/assignments.png',
   },
   {
-    title: 'Generative AI Content Tools',
+    title: 'Interactive Games',
     description:
-      'Created Social Story, Reading Comprehension, and Decodable Text generators using OpenAI GPT and Google Gemini APIs and prompt engineering. Designed UI workflows for safe, editable outputs.',
-    blogLink:
-      'https://ai-learners.com/resources/creating-decodable-passages-with-ai-learners',
-    figmaLink:
-      'https://www.figma.com/design/4oP48qj8my1MDM3S14Ueo1/AI-Learners-Design-Examples--Public-Features-?node-id=0-1',
-    screenshot: './featured-projects/stories.png',
-  },
-  {
-    title: 'Customizable Games',
-    description:
-      'Led engineering for a scalable system supporting over 250 customizable learning games across math and literacy. Built for accessibility and configurability.',
-    blogLink:
-      'https://ai-learners.com/resources/teaching-supports-in-ai-learners-games',
-    figmaLink:
-      'https://www.figma.com/design/4oP48qj8my1MDM3S14Ueo1/AI-Learners-Design-Examples--Public-Features-?node-id=1-122114',
+      'Designed and built over 250 interactive games covering early math and literacy concepts, with adaptive difficulty and accessibility features.',
+    blogLink: 'https://www.ai-learners.com/blog/interactive-games',
+    figmaLink: 'https://www.figma.com/file/interactive-games',
     screenshot: './featured-projects/games.png',
   },
   {
     title: 'Teacher Account Setup',
     description:
-      'Built a robust dashboard for teachers to monitor student progress, visualize trends, and export reports. We use Machine Learning to provide personalized recommendations for each student. We also integrated Stripe (subscriptions), HubSpot (CRM), and Clever (SSO, rostering) to streamline operations and onboarding.',
-    blogLink:
-      'https://ai-learners.com/resources/school-teacher-account-setup-guide',
+      'Created a streamlined onboarding process for teachers, including account verification, school district integration, and initial setup.',
+    blogLink: 'https://www.ai-learners.com/blog/teacher-setup',
     screenshot: './featured-projects/teacher-account-setup.png',
   },
 ];
